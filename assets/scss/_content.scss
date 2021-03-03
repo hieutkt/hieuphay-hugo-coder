@@ -34,7 +34,8 @@
       }
     }
     h2::before {
-      content: "\1F658 ";
+      content: "f";
+      padding-right: 1rem;
       font-family: $windings-font-family;
     }
     footer {
