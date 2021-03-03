@@ -628,3 +628,12 @@
 	font-style: italic;
 	src: url('../woff2/iosevka-extendedheavyitalic.woff2') format('woff2'), url('../woff/iosevka-extendedheavyitalic.woff') format('woff'), url('ttf/iosevka-extendedheavyitalic.ttf') format('truetype');
 }
+
+
+@font-face {
+	font-family: 'Windings 2';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: expanded;
+	src: url('../ttf/WINGDNG2.TTF') format('truetype');
+}
