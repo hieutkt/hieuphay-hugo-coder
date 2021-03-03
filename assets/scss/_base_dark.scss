@@ -3,6 +3,9 @@
   color: $fg-color-dark;
   background-color: $bg-color-dark;
 
+  ::selection {
+    background: $muted-bg-color-dark;
+  }
   a {
     color: $link-color-dark;
   }
@@ -13,14 +16,13 @@
   h4,
   h5,
   h6 {
-    color: $alt-fg-color-dark;
+    color: $main-fg-color-dark;
 
     &:hover .heading-link {
       visibility: visible;
     }
 
     .heading-link {
-      color: $link-color-dark;
       font-weight: inherit;
       text-decoration: none;
       font-size: 80%;
@@ -34,10 +36,25 @@
     }
   }
 
+  hr {
+    border-top: 1px dashed $gruvbox-gray-dark;
+  }
+
   code {
     background-color: $alt-bg-color-dark;
     color: $fg-color-dark;
   }
+
+  kbd {
+    -moz-box-shadow:0 1px 0 $alt-bg-color-dark,0 0 0 2px $muted-bg-color-dark inset;
+    -webkit-box-shadow:0 1px 0 $alt-bg-color-dark,0 0 0 2px $muted-bg-color-dark inset;
+    background-color: $gruvbox-dark0-soft-dark;
+    border:1px solid $main-bg-color-dark;
+    box-shadow:0 2px 0 $alt-bg-color-dark,0 0 0 2px $gruvbox-dark3-dark inset;
+    color: $main-fg-color-dark;
+    text-shadow:0 1px 0 $muted-bg-color-dark;
+  }
+
 
   pre {
     code {

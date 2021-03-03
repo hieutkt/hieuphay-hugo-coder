@@ -1,17 +1,152 @@
-// Fonts
-$font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
-$code-font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+// Fonts (My custom fonts are pushed to front)
+$font-family: "Alegreya", -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+$serif-font-family: "Alegreya", -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;;
+$code-font-family: "Iosevka Web", SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+
+
+
+// LIGHT VERSION
+$main-fg-color: #111111;
+$main-bg-color: #fcfaf3;
+$emph-bg-color: #e1ecf4;
+$muted-bg-color: #ebdbb2;
+$switch-text: "Dark mode?";
+$switch-color: #373d4e;
+
+$gruvbox-bg-alt:          #ffffd8;
+$gruvbox-dark0-hard:      #f9f5d7;
+$gruvbox-dark0:           #fbf1c7;
+$gruvbox-dark0-soft:      #f2e5bc;
+$gruvbox-dark1:           #ebdbb2;
+$gruvbox-dark2:           #d5c4a1;
+$gruvbox-dark3:           #bdae93;
+$gruvbox-dark4:           #a89984;
+
+$gruvbox-gray:            #928374;
+
+$gruvbox-light0-hard:     #1d2021;
+$gruvbox-light0:          #282828;
+$gruvbox-light1:          #3c3836;
+$gruvbox-light2:          #504945;
+$gruvbox-light3:          #665c54;
+$gruvbox-light4:          #7c6f64;
+
+$gruvbox-bright-red:      #9d0006;
+$gruvbox-bright-green:    #79740e;
+$gruvbox-bright-yellow:   #b57614;
+$gruvbox-bright-blue:     #076678;
+$gruvbox-bright-purple:   #8f3f71;
+$gruvbox-bright-aqua:     #427b58;
+$gruvbox-bright-orange:   #af3a03;
+
+$gruvbox-neutral-red:     #9d0006;
+$gruvbox-neutral-green:   #79740e;
+$gruvbox-neutral-yellow:  #b57614;
+$gruvbox-neutral-blue:    #076678;
+$gruvbox-neutral-purple:  #8f3f71;
+$gruvbox-neutral-aqua:    #427b58;
+$gruvbox-neutral-orange:  #af3a03;
+
+$gruvbox-faded-red:       #cc241d;
+$gruvbox-faded-green:     #98971a;
+$gruvbox-faded-yellow:    #d79921;
+$gruvbox-faded-blue:      #458588;
+$gruvbox-faded-purple:    #b16286;
+$gruvbox-faded-aqua:      #689d6a;
+$gruvbox-faded-orange:    #d65d0e;
+
+$gruvbox-dark-red:        #421E1E;
+$gruvbox-dark-blue:       #2B3C44;
+$gruvbox-dark-aqua:       #36473A;
+
+$gruvbox-delimiter-one:   #458588;
+$gruvbox-delimiter-two:   #b16286;
+$gruvbox-delimiter-three: #8ec07c;
+$gruvbox-delimiter-four:  #d65d0e;
+$gruvbox-white:           #FFFFFF;
+$gruvbox-black:           #000000;
+$gruvbox-sienna:          #DD6F48;
+$gruvbox-lightblue4:      #66999D;
+$gruvbox-burlywood4:      #BBAA97;
+$gruvbox-aquamarine4:     #83A598;
+$gruvbox-turquoise4:      #61ACBB;
 
 // Colors
-$bg-color: #FAFAFA !default;
-$fg-color: #212121 !default;
+$bg-color: #fcfaf3 !default;
+$fg-color: #111111 !default;
 $alt-bg-color: #E0E0E0 !default;
 $alt-fg-color: #000 !default;
-$link-color: #1565c0 !default;
+$link-color: $gruvbox-turquoise4 !default;
+
+// DARK VERSION
+$main-fg-color-dark: #f7f1e3;
+$main-bg-color-dark: #2f3640;
+$emph-bg-color-dark: #3f4553;
+$muted-bg-color-dark: #1c1c1c;
+$switch-text-dark: "Light mode?";
+$switch-color-dark: #fce477;
+
+$gruvbox-bg-alt-dark:          #504945;
+$gruvbox-dark0-hard-dark:      #1d2021;
+$gruvbox-dark0-dark:           #282828;
+$gruvbox-dark0-soft-dark:      #32302f;
+$gruvbox-dark1-dark:           #3c3836;
+$gruvbox-dark2-dark:           #504945;
+$gruvbox-dark3-dark:           #665c54;
+$gruvbox-dark4-dark:           #7c6f64;
+
+$gruvbox-gray-dark:            #928374;
+
+$gruvbox-light0-hard-dark:     #ffffc8;
+$gruvbox-light0-dark:          #fdf4c1;
+$gruvbox-light1-dark:          #ebdbb2;
+$gruvbox-light2-dark:          #d5c4a1;
+$gruvbox-light3-dark:          #bdae93;
+$gruvbox-light4-dark:          #a89984;
+
+$gruvbox-bright-red-dark:      #fb4933;
+$gruvbox-bright-green-dark:    #b8bb26;
+$gruvbox-bright-yellow-dark:   #fabd2f;
+$gruvbox-bright-blue-dark:     #83a598;
+$gruvbox-bright-purple-dark:   #d3869b;
+$gruvbox-bright-aqua-dark:     #8ec07c;
+$gruvbox-bright-orange-dark:   #fe8019;
+
+$gruvbox-neutral-red-dark:     #fb4933;
+$gruvbox-neutral-green-dark:   #b8bb26;
+$gruvbox-neutral-yellow-dark:  #fabd2f;
+$gruvbox-neutral-blue-dark:    #83a598;
+$gruvbox-neutral-purple-dark:  #d3869b;
+$gruvbox-neutral-aqua-dark:    #8ec07c;
+$gruvbox-neutral-orange-dark:  #fe8019;
+
+$gruvbox-faded-red-dark:       #cc241d;
+$gruvbox-faded-green-dark:     #98971a;
+$gruvbox-faded-yellow-dark:    #d79921;
+$gruvbox-faded-blue-dark:      #458588;
+$gruvbox-faded-purple-dark:    #b16286;
+$gruvbox-faded-aqua-dark:      #689d6a;
+$gruvbox-faded-orange-dark:    #d65d0e;
+
+$gruvbox-dark-red-dark:        #421E1E;
+$gruvbox-dark-blue-dark:       #2B3C44;
+$gruvbox-dark-aqua-dark:       #36473A;
+
+$gruvbox-delimiter-one-dark:   #458588;
+$gruvbox-delimiter-two-dark:   #b16286;
+$gruvbox-delimiter-three-dark: #8ec07c;
+$gruvbox-delimiter-four-dark:  #d65d0e;
+$gruvbox-white-dark:           #FFFFFF;
+$gruvbox-black-dark:           #000000;
+$gruvbox-sienna-dark:          #DD6F48;
+$gruvbox-lightblue4-dark:      #66999D;
+$gruvbox-burlywood4-dark:      #BBAA97;
+$gruvbox-aquamarine4-dark:     #83A598;
+$gruvbox-turquoise4-dark:      #61ACBB;
 
 // Colors dark
-$bg-color-dark: #212121 !default;
-$fg-color-dark: #dadada !default;
+$bg-color-dark: #2f3640 !default;
+$fg-color-dark: #f7f1e3 !default;
 $alt-bg-color-dark: #424242 !default;
 $alt-fg-color-dark: #dadada !default;
-$link-color-dark: #42a5f5 !default;
+$link-color-dark: $gruvbox-turquoise4-dark !default;

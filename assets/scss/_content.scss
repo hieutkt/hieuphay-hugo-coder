@@ -22,6 +22,21 @@
         }
       }
     }
+    > div {
+      a {
+        color: inherit;
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+        &:hover {
+          text-decoration-style: solid;
+          color: $link-color;
+        }
+      }
+    }
+    h2::before {
+      content: "\1F658 ";
+      font-family: sans-serif;
+    }
     footer {
       margin-top: 4.0rem;
       .see-also {
@@ -31,7 +46,7 @@
         }
       }
     }
-    p {
+    p, ul {
       text-align: justify;
       text-justify: auto;
       hyphens: auto;
@@ -102,7 +117,7 @@
         font-size: 1.8rem;
         flex:2;
         color: $fg-color;
-        font-family: $font-family;
+        font-family: $serif-font-family;
         font-weight: 700;
         &:hover,
         &:focus {

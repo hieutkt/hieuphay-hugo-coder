@@ -1,0 +1,128 @@
+
+/* Background */ .chroma { color: $gruvbox-gray;
+                           background-color: $gruvbox-dark0-soft }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err {  }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%; background-color: $gruvbox-bg-alt }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: $gruvbox-dark4 }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; color: $gruvbox-dark4; background-color: $gruvbox-dark1 }
+/* Keyword */ .chroma .k { color: $gruvbox-bright-red }
+/* KeywordConstant */ .chroma .kc { color: $gruvbox-bright-red; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: $gruvbox-bright-red }
+/* KeywordNamespace */ .chroma .kn { color: $gruvbox-bright-red; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: $gruvbox-bright-red }
+/* KeywordReserved */ .chroma .kr { color: $gruvbox-bright-red }
+/* KeywordType */ .chroma .kt { color: $gruvbox-bright-red; font-weight: bold }
+/* Name */ .chroma .n { color: $gruvbox-light0 }
+/* NameAttribute */ .chroma .na { color: $gruvbox-bright-blue }
+/* NameBuiltin */ .chroma .nb { color: $gruvbox-bright-red }
+/* NameBuiltinPseudo */ .chroma .bp { color: $gruvbox-bright-blue }
+/* NameClass */ .chroma .nc { color: $gruvbox-bright-yellow }
+/* NameConstant */ .chroma .no { color: $gruvbox-bright-purple }
+/* NameDecorator */ .chroma .nd { color: $gruvbox-bright-blue }
+/* NameEntity */ .chroma .ni { color: $gruvbox-bright-blue }
+/* NameException */ .chroma .ne { color: $gruvbox-bright-blue }
+/* NameFunction */ .chroma .nf { color: $gruvbox-bright-yellow }
+/* NameFunctionMagic */ .chroma .fm { color: $gruvbox-bright-yellow }
+/* NameLabel */ .chroma .nl { color: $gruvbox-bright-blue }
+/* NameNamespace */ .chroma .nn { color: $gruvbox-light0 }
+/* NameOther */ .chroma .nx { color: $gruvbox-bright-blue }
+/* NameProperty */ .chroma .py { color: $gruvbox-bright-blue }
+/* NameTag */ .chroma .nt { color: $gruvbox-bright-blue; font-weight: bold }
+/* NameVariable */ .chroma .nv { color: $gruvbox-bright-blue }
+/* NameVariableClass */ .chroma .vc { color: $gruvbox-bright-blue }
+/* NameVariableGlobal */ .chroma .vg { color: $gruvbox-bright-blue }
+/* NameVariableInstance */ .chroma .vi { color: $gruvbox-bright-blue }
+/* NameVariableMagic */ .chroma .vm { color: $gruvbox-bright-blue }
+/* Literal */ .chroma .l { color: $gruvbox-bright-green }
+/* LiteralDate */ .chroma .ld { color: $gruvbox-bright-green }
+/* LiteralString */ .chroma .s { color: $gruvbox-bright-green }
+/* LiteralStringAffix */ .chroma .sa { color: $gruvbox-bright-green }
+/* LiteralStringBacktick */ .chroma .sb { color: $gruvbox-bright-green }
+/* LiteralStringChar */ .chroma .sc { color: $gruvbox-bright-green }
+/* LiteralStringDelimiter */ .chroma .dl { color: $gruvbox-bright-green }
+/* LiteralStringDoc */ .chroma .sd { color: $gruvbox-bright-green }
+/* LiteralStringDouble */ .chroma .s2 { color: $gruvbox-bright-green }
+/* LiteralStringEscape */ .chroma .se { color: $gruvbox-bright-green }
+/* LiteralStringHeredoc */ .chroma .sh { color: $gruvbox-bright-green }
+/* LiteralStringInterpol */ .chroma .si { color: $gruvbox-bright-green }
+/* LiteralStringOther */ .chroma .sx { color: $gruvbox-bright-green }
+/* LiteralStringRegex */ .chroma .sr { color: $gruvbox-bright-green }
+/* LiteralStringSingle */ .chroma .s1 { color: $gruvbox-bright-green }
+/* LiteralStringSymbol */ .chroma .ss { color: $gruvbox-bright-green }
+/* LiteralNumber */ .chroma .m { color: $gruvbox-bright-purple; font-weight: bold }
+/* LiteralNumberBin */ .chroma .mb { color: $gruvbox-bright-purple; font-weight: bold }
+/* LiteralNumberFloat */ .chroma .mf { color: $gruvbox-bright-purple; font-weight: bold }
+/* LiteralNumberHex */ .chroma .mh { color: $gruvbox-bright-purple; font-weight: bold }
+/* LiteralNumberInteger */ .chroma .mi { color: $gruvbox-bright-purple; font-weight: bold }
+/* LiteralNumberIntegerLong */ .chroma .il { color: $gruvbox-bright-purple; font-weight: bold }
+/* LiteralNumberOct */ .chroma .mo { color: $gruvbox-bright-purple; font-weight: bold }
+/* Operator */ .chroma .o { color: $gruvbox-light0 }
+/* OperatorWord */ .chroma .ow { color: $gruvbox-light0 }
+/* Punctuation */ .chroma .p { color: $gruvbox-delimiter-one }
+/* Comment */ .chroma .c { color: $gruvbox-dark4; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: $gruvbox-dark4; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: $gruvbox-dark4; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: $gruvbox-dark4; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: $gruvbox-dark4; font-style: italic }
+/* CommentPreproc */ .chroma .cp { color: $gruvbox-dark4; font-style: italic }
+/* CommentPreprocFile */ .chroma .cpf { color: $gruvbox-dark4; font-style: italic }
+/* Generic */ .chroma .g { color: $gruvbox-bright-purple }
+/* GenericDeleted */ .chroma .gd { color: $gruvbox-bright-purple }
+/* GenericEmph */ .chroma .ge { color: $gruvbox-bright-purple }
+/* GenericError */ .chroma .gr { color: $gruvbox-bright-purple }
+/* GenericHeading */ .chroma .gh { color: $gruvbox-bright-purple }
+/* GenericInserted */ .chroma .gi { color: $gruvbox-bright-purple }
+/* GenericOutput */ .chroma .go { color: $gruvbox-bright-purple }
+/* GenericPrompt */ .chroma .gp { color: $gruvbox-bright-purple }
+/* GenericStrong */ .chroma .gs { color: $gruvbox-bright-purple }
+/* GenericSubheading */ .chroma .gu { color: $gruvbox-bright-purple }
+/* GenericTraceback */ .chroma .gt { color: $gruvbox-bright-purple }
+/* GenericUnderline */ .chroma .gl { color: $gruvbox-bright-purple }
+/* Text */ .chroma {  }
+/* TextWhitespace */ .chroma .w {  }
+
+
+/* Misc */
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+    scrollbar-color: $gruvbox-dark3 $gruvbox-dark0-soft;
+    scrollbar-width: thin;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: $gruvbox-dark3;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $gruvbox-dark0-soft;
+  border-radius: 20px;
+  border: 3px solid $gruvbox-dark3;
+}
+
+/* :-webkit-scrollbar { */
+/*   width: 20px; */
+/* } */
+
+/* /\* Track *\/ */
+/* ::-webkit-scrollbar-track { */
+/*   box-shadow: inset 0 0 5px grey;  */
+/*   border-radius: 10px; */
+/* } */
+
+/* /\* Handle *\/ */
+/* ::-webkit-scrollbar-thumb { */
+/*   background: red !important;  */
+/*   border-radius: 10px; */
+/* } */
+
+/* /\* Handle on hover *\/ */
+/* ::-webkit-scrollbar-thumb:hover { */
+/*   background: #b30000;  */
+/* } */

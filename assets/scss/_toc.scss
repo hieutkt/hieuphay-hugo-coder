@@ -1,0 +1,77 @@
+@media (min-width: 768px) {
+    /*TOC inspired by https://orgmode.org/worg/ */
+    .ox-hugo-toc {
+        /* Place the toc in the top right corner */
+        z-index: 100; /*Float above everything*/
+        position: fixed; right: 0em; top: 0em;
+        margin-top: 15px; /* offset from the top of the screen */
+
+        /* It shrinks and grows as necessary */
+        padding: 0em !important;
+        width: auto !important;
+        min-width: auto !important;
+
+        background: $muted-bg-color;
+        /* font-size: 10pt; */
+        /* line-height: 12pt; */
+        /* text-align: right; */
+
+        box-shadow: 0 0 1em #777777;
+        -webkit-box-shadow: 0 0 1em #777777;
+        -moz-box-shadow: 0 0 1em #777777;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomleft: 5px;
+
+        /* Ensure doesn't flow off the screen when expanded */
+        max-height: 80%;
+        overflow: auto;
+    }
+
+
+
+    /* How big is the text “Table of Contents” and space around it */
+    .ox-hugo-toc .heading {
+        /* width: 100%; */
+        /* font-size: 13pt; */
+        /* max-width: 9em; */
+        /* border: 0; */
+        /* font-weight: normal; */
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2.2 rem;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin: 0;
+    }
+
+    .ox-hugo-toc:hover .heading:after {
+        content: ' Table of Contents';
+    }
+
+    /* Intially have the TOC folded up; show it if the mouse hovers it */
+    .ox-hugo-toc ul {
+        max-width: 95%;
+        display: none;
+        text-align: left;
+    }
+
+    .ox-hugo-toc li, .ox-hugo-toc ul, .ox-hugo-toc a, .ox-hugo-toc code {
+        background: inherit;
+    }
+
+    .ox-hugo-toc:hover ul {
+        background: inherit;
+        width: 100%;
+        display: block;
+        /* padding: 0.5em; */
+        /* margin-top: -1.5em; */
+    }
+}
+
+@media (max-width: 768px) {
+    .ox-hugo-toc .heading:after {
+        content: " Table of Contents"
+    }
+}

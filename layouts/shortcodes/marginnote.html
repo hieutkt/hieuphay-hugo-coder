@@ -1,0 +1,3 @@
+{{ $marginnoteDomIdSuffix := .Ordinal }}<label for="marginnote-{{.Page.UniqueID}}-{{ $marginnoteDomIdSuffix }}" class="margin-toggle"><i class="fa fa-angle-down"></i></label>
+<input type="checkbox" id="marginnote-{{.Page.UniqueID}}-{{ $marginnoteDomIdSuffix }}" class="margin-toggle"/>
+<span class="marginnote">{{ .Inner }}</span>

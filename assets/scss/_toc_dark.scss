@@ -1,0 +1,18 @@
+@mixin toc_dark {
+    @media (min-width: 768px) {
+        /*TOC inspired by https://orgmode.org/worg/ */
+        .ox-hugo-toc {
+            background: $muted-bg-color-dark;
+        }
+    }
+}
+
+body.colorscheme-dark {
+  @include toc_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include toc_dark()
+  }
+}

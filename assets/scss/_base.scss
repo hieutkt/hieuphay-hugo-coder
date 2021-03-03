@@ -15,11 +15,16 @@ body {
 	font-family: $font-family;
 	font-size: 1.8em;
 	font-weight: 400;
-  line-height: 1.8em;
+  line-height: 1.4em;
+  // font-feature-settings: "liga" 1;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
     line-height: 1.6em;
   }
+}
+
+::selection {
+    background: $muted-bg-color;
 }
 
 a {
@@ -43,10 +48,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family;
+  font-family: $serif-font-family;
   font-weight: 600;
-  color: $alt-fg-color;
-  margin: 4rem 0 2.5rem 0;
+  color: $main-fg-color;
+  hyphens: none;
 
   &:hover .heading-link {
     visibility: visible;
@@ -58,6 +63,9 @@ h6 {
     text-decoration: none;
     font-size: 80%;
     visibility: hidden;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .title-link {
@@ -73,9 +81,10 @@ h1 {
   @media only screen and (max-width : 768px) {
     font-size: 3.0rem;
     line-height: 3.4rem;
+    max-width: 97%;
   }
 }
-h2 {
+h2, #bibliography {
   font-size: 2.8rem;
   line-height: 3.2rem;
   @media only screen and (max-width : 768px) {
@@ -116,6 +125,15 @@ h6 {
   }
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed $gruvbox-gray;
+    margin: 1em 0;
+    padding: 0;
+}
+
 b, strong {
   font-weight: 700;
 }
@@ -130,27 +148,54 @@ b, strong {
 pre {
   display: block;
   font-family: $code-font-family;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2.6rem;
+  // line-height: 2.6rem;
   overflow-x: auto;
   margin: 0;
   code {
+    font-size: 1.4rem;
     display: inline-block;
     background-color: inherit;
     color: inherit;
+    @media (max-width: 768px) {
+      width: 97%;
+      line-height: 1.5rem;
+      font-size: 1.1rem;
+    }
   }
 }
 
 code {
   font-family: $code-font-family;
-  font-size: 1.6rem;
+  font-size: 80%;
   font-weight: 400;
   background-color: $alt-bg-color;
+  border-radius: 10px;
+  padding: 2px 4px;
   color: $fg-color;
 }
 
+
+kbd {
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 $alt-bg-color,0 0 0 2px $muted-bg-color inset;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow:0 1px 0 $alt-bg-color,0 0 0 2px $muted-bg-color inset;
+    background-color: $gruvbox-dark0-soft;
+    border:1px solid $main-bg-color;
+    border-radius:3px;
+    box-shadow:0 2px 0 $alt-bg-color,0 0 0 2px $gruvbox-dark3 inset;
+    color: $main-fg-color;
+    font-family: Iosevka Web;
+    /* margin:0 .1em; */
+    padding: 0 .3em;
+    text-shadow:0 1px 0 $muted-bg-color;
+}
+
+
 blockquote {
+  margin: 0 0 0 0;
   border-left: 2px solid $alt-bg-color;
   padding-left: 2.0rem;
   line-height: 2.2rem;

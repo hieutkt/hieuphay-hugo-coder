@@ -1,0 +1,16 @@
+@mixin tufte-margin_dark{
+    figcaption:before{
+        border-top: 1.5px dotted $gruvbox-light4-dark;
+    }
+}
+
+
+body.colorscheme-dark {
+  @include tufte-margin_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include tufte-margin_dark()
+  }
+}

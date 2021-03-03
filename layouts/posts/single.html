@@ -36,6 +36,8 @@
           <img src='{{ .Params.featuredImage }}' alt="Featured image"/>
         {{ end }}
         {{ .Content }}
+          <!-- Implementing backlinks -->
+        {{ partial "posts/backlinks.html" . }}
       </div>
 
 

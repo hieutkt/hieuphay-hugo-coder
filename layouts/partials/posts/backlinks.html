@@ -1,0 +1,20 @@
+<!-- Obtain all backlinks -->
+{{ $re := $.File.BaseFileName }}
+{{ $backlinks := slice }}
+{{ range .Site.AllPages }}
+   {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+      {{ $backlinks = $backlinks | append . }}
+   {{ end }}
+{{ end }}
+<!-- Generate the HTML -->
+{{ if gt (len $backlinks) 0 }}
+  <hr>
+  <div class="backlinks">
+     <b>{{ ( index .Site.Data.translations .Site.Language.Lang ).backlinktext }}</b>
+     <ul>
+       {{ range $backlinks }}
+         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <i>({{ .Date.Format "2006-01-02" }})</i></li>
+       {{ end }}
+     </ul>
+  </div>
+{{ end }}

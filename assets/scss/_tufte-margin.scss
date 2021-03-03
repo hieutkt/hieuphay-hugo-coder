@@ -1,0 +1,192 @@
+.tufte-margin-reduced {
+  max-width: 65%;
+  @media only screen and (max-width : 768px) {
+    max-width: 100%;
+  }
+}
+
+.tufte-margin {
+    // text-align: justify;
+    hyphens: auto;
+    float: right;
+    clear: right;
+    margin-right: -53%;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+    p, code {
+      font-size: 1.3rem !important;
+    }
+}
+
+article {
+  & > div {
+      & > p, dl, h2, h3, h4, h5, h6, div.highlight, blockquote, hr,
+      & > ul, & > figure {
+      @extend .tufte-margin-reduced;
+    }
+  }
+}
+
+
+
+
+.sidenote, .marginnote, figcaption {
+    @extend .tufte-margin
+}
+
+figcaption p {
+    text-align: left !important;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+blockquote p {
+    font-size: 2rem;
+}
+
+blockquote footer {
+    margin-top: 0rem !important;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+.fullwidth {
+    max-width: 100%;
+    clear: both;
+}
+
+span.newthought {
+    // font-family: var(--font-serif);
+    /* font-weight: bold; */
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+figcaption:before {
+    content: '';
+    position: absolute;
+    right: -0%;
+    left: -100%;
+    border-top: 1.5px dotted $gruvbox-light4-dark;
+    z-index: -1;
+}
+
+figure.fullwidth figcaption {
+    margin: 0 5%;
+    width: 90%;
+    max-width: none;
+    p {
+        text-align: center !important
+    }
+    &::before {
+        border-top: none !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    figcaption {
+        margin: 0 5%;
+        width: 90%;
+        max-width: none;
+        margin-bottom: 1.5em;
+        p {
+            text-align: center !important;
+        }
+        &::before {
+            border-top: none;
+        }
+    }
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+	    padding: 0;
+	    border-left: none;
+	    font-size: 1.2rem !important;
+    }
+
+    blockquote:not(:hover) {
+	    border-left: none;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+	    line-height: 1.2;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+        i:before {
+            color: $link-color;
+        }
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        /* vertical-align: baseline; */
+        position: relative;
+    }
+}
