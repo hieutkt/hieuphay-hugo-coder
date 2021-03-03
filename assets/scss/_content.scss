@@ -34,7 +34,18 @@
       }
     }
     h2::before {
+      content: "\1F650 ";
+      font-weight: 400;
+      font-family: $symbol-font-family;
+    }
+    h3::before {
       content: "\1F658 ";
+      font-weight: 400;
+      font-family: $symbol-font-family;
+    }
+    h4::before {
+      content: "\1F662 ";
+      font-weight: 400;
       font-family: $symbol-font-family;
     }
     footer {
