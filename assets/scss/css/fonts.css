@@ -631,9 +631,9 @@
 
 
 @font-face {
-	font-family: 'Windings 2';
+	font-family: 'Segoe UI Symbol';
 	font-display: swap;
 	font-weight: 400;
 	font-stretch: expanded;
-	src: url('../ttf/WINGDNG2.TTF') format('truetype');
+	src: url('../ttf/seguisym.ttf') format('truetype');
 }
