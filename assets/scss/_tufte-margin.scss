@@ -24,12 +24,15 @@
 }
 
 article {
-  & > div {
-      & > p, dl, h2, h3, h4, h5, h6, div.highlight, blockquote, hr,
-      & > ul, & > figure {
-      @extend .tufte-margin-reduced;
+    & > p {
+        @extend .tufte-margin-reduced;
     }
-  }
+    & > div {
+        & > p, dl, h2, h3, h4, h5, h6, div.highlight, blockquote, hr,
+        & > ul, & > figure {
+            @extend .tufte-margin-reduced;
+        }
+    }
 }
 
 
