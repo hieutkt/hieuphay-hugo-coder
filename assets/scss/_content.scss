@@ -34,17 +34,20 @@
       }
     }
     h2::before {
-      content: "\1F650 ";
+      content: "\1F650";
+      margin-right: 0.5rem;
       font-weight: 400;
       font-family: $symbol-font-family;
     }
     h3::before {
-      content: "\1F658 ";
+      content: "\1F658";
+      margin-right: 0.5rem;
       font-weight: 400;
       font-family: $symbol-font-family;
     }
     h4::before {
-      content: "\1F662 ";
+      content: "";
+      margin-right: 0.5rem;
       font-weight: 400;
       font-family: $symbol-font-family;
     }
