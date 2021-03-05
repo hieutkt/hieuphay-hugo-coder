@@ -6,7 +6,7 @@
     {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}}
     {{with .Params.disqus_title }}this.page.title = '{{ . }}';{{end}}
     {{with .Params.disqus_url }}this.page.url = '{{ . | html  }}';{{end}}
-    {{if eq .Site.Language.Lang "vi"}}this.language = "vi_VN";{{end}}
+    {{with .Site.Language.Lang }}this.language = '{{ . }}';{{end}}
     };
     (function() {
         if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
