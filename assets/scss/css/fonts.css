@@ -629,3 +629,7 @@
 	src: url('../woff2/iosevka-extendedheavyitalic.woff2') format('woff2'), url('../woff/iosevka-extendedheavyitalic.woff') format('woff'), url('ttf/iosevka-extendedheavyitalic.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: "SegoeUISymbol6.23";
+	src: url('../ttf/Segoe UI Symbol.ttf') format('truetype');
+}
