@@ -3,6 +3,10 @@
   color: $fg-color-dark;
   background-color: $bg-color-dark;
 
+  body {
+    font-weight: 400;
+  }
+
   ::selection {
     background: $muted-bg-color-dark;
   }
