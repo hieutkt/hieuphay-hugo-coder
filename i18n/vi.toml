@@ -1,0 +1,33 @@
+[category]
+other = "phân loại"
+
+[tag]
+other = "tag"
+
+[series]
+other = "chuỗi bài"
+
+[author]
+other = "tác giả"
+
+[posts]
+other = "bài viết"
+
+[reading_time]
+one = "Đọc trong một phút"
+other = "Đọc trong {{ .Count }} phút"
+
+[page_not_found]
+other = "Không tìm thấy trang"
+
+[page_does_not_exist]
+other = "Sorry, this page does not exist."
+
+[head_back]
+other = "Quay trở về <a href=\"{{ . }}\">trang chủ</a>."
+
+[powered_by]
+other = "Được vận hành bởi"
+
+[see_also]
+other = "Xem thêm trong"
