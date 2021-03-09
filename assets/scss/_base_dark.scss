@@ -85,6 +85,10 @@
     border: 2px solid $alt-fg-color-dark;
   }
 
+  dl {
+    background-color: $emph-bg-color-dark;
+    box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
+  }
 }
 
 body.colorscheme-dark {
