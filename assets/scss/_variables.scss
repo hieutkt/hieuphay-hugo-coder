@@ -8,7 +8,7 @@ $symbol-font-family: "NotoSansSymbols2-Regular", -apple-system,BlinkMacSystemFon
 // LIGHT VERSION
 $main-fg-color: #111111;
 $main-bg-color: #fcfaf3;
-$emph-bg-color: #e1ecf4;
+$emph-bg-color: adjust-color($main-bg-color, $lightness: -5%);
 $muted-bg-color: #ebdbb2;
 $switch-text: "Dark mode?";
 $switch-color: #373d4e;
@@ -81,7 +81,7 @@ $link-color: $gruvbox-turquoise4 !default;
 // DARK VERSION
 $main-fg-color-dark: #f7f1e3;
 $main-bg-color-dark: #2f3640;
-$emph-bg-color-dark: #3f4553;
+$emph-bg-color-dark: adjust-color($main-bg-color-dark, $lightness: 5%);
 $muted-bg-color-dark: #1c1c1c;
 $switch-text-dark: "Light mode?";
 $switch-color-dark: #fce477;
