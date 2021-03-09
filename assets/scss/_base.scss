@@ -259,12 +259,13 @@ dl {
     // border-radius: 10px;
 }
 dt {
-    font-weight: bold;
-    padding: 2px 4px;
+  font-weight: bold;
+  padding: 2px 4px;
 }
 
 img {
   max-width: 100%;
+  box-shadow: 5px 6px 10px $gruvbox-dark3;
 }
 
 figure {
