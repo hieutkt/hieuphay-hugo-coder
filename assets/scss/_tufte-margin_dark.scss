@@ -1,6 +1,9 @@
-@mixin tufte-margin_dark{
-    figcaption:before{
-        border-top: 1.5px dotted $gruvbox-light4-dark;
+@mixin tufte-margin_dark {
+    figcaption::before{
+        border-top: 2px dotted $gruvbox-bright-blue-dark;
+        @media (max-width: 768px) {
+          border-top: none;
+        }
       }
     .sidenote-number::after,
     .sidenote::before,
