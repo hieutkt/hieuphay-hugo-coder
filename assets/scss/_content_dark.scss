@@ -1,7 +1,13 @@
 @mixin content_dark {
 
   .content {
-  
+    article {
+      h2, h3, h4 {
+        &::before {
+          color: lighten($bg-color-dark, 20%);
+        }
+      }
+    }
     .list {
       ul {
         li {
