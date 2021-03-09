@@ -46,6 +46,10 @@ figcaption p {
     text-align: left !important;
 }
 
+article {
+    counter-reset: sidenote-counter;
+}
+
 .sidenote-number {
     counter-increment: sidenote-counter;
 }
@@ -56,17 +60,18 @@ figcaption p {
     vertical-align: baseline;
 }
 
-.sidenote-number:after {
-    content: counter(sidenote-counter);
-    font-size: 1rem;
+.sidenote-number::after {
+    content: "[" counter(sidenote-counter) "]";
+    font-size: 1.2rem;
     top: -0.5rem;
     left: 0.1rem;
+    color: $gruvbox-bright-red;
 }
 
-.sidenote:before {
-    content: counter(sidenote-counter) " ";
-    font-size: 1rem;
-    top: -0.5rem;
+.sidenote::before {
+    content: "[" counter(sidenote-counter) "] ";
+    font-size: 1.2rem;
+    color: $gruvbox-bright-red;
 }
 
 blockquote .sidenote,
@@ -172,7 +177,7 @@ figure.fullwidth figcaption {
     label.margin-toggle:not(.sidenote-number) {
         display: inline;
         i:before {
-            color: $link-color;
+            color: $gruvbox-bright-red;
         }
     }
 

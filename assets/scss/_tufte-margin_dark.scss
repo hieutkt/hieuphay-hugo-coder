@@ -1,7 +1,12 @@
 @mixin tufte-margin_dark{
     figcaption:before{
         border-top: 1.5px dotted $gruvbox-light4-dark;
-    }
+      }
+    .sidenote-number::after,
+    .sidenote::before,
+    label.margin-toggle i::before {
+        color: $gruvbox-bright-blue-dark;
+      }
 }
 
 
