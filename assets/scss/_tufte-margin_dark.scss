@@ -10,6 +10,10 @@
     label.margin-toggle i::before {
         color: $gruvbox-bright-blue-dark;
       }
+
+    .epigraph blockquote {
+        background-color: $main-bg-color-dark !important;
+      }
 }
 
 

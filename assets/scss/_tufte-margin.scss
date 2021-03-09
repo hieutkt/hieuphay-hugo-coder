@@ -87,6 +87,11 @@ blockquote footer {
     text-align: right;
 }
 
+.epigraph blockquote {
+    background-color: $main-bg-color !important;
+    box-shadow: none !important;
+}
+
 div.fullwidth,
 table.fullwidth {
     width: 100%;
@@ -98,10 +103,8 @@ table.fullwidth {
 }
 
 span.newthought {
-    // font-family: var(--font-serif);
-    /* font-weight: bold; */
     font-variant: small-caps;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
