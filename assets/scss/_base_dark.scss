@@ -53,6 +53,9 @@
     code[data-lang]:not([data-lang=""])::before {
       color: $gruvbox-dark4-dark;
     }
+    code[data-lang="shell"] .line::before {
+      color: $gruvbox-dark4-dark;
+    }
   }
 
 
