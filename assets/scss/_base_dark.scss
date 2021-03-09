@@ -78,7 +78,8 @@
   }
 
   blockquote {
-    border-left: 2px solid $alt-bg-color-dark;
+    background-color: $emph-bg-color-dark;
+    box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
   }
 
   table td, table th {

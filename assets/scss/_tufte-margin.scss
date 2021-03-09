@@ -81,12 +81,8 @@ blockquote .marginnote {
     text-align: left;
 }
 
-blockquote p {
-    font-size: 2rem;
-}
-
 blockquote footer {
-    margin-top: 0rem !important;
+    margin-top: 0rem;
     font-size: 1.4rem;
     text-align: right;
 }
@@ -155,23 +151,6 @@ figure.fullwidth figcaption {
         &::before {
             border-top: none;
         }
-    }
-    blockquote {
-        margin-left: 1.5em;
-        margin-right: 0em;
-	    padding: 0;
-	    border-left: none;
-	    font-size: 1.2rem !important;
-    }
-
-    blockquote:not(:hover) {
-	    border-left: none;
-    }
-
-    blockquote p,
-    blockquote footer {
-        width: 100%;
-	    line-height: 1.2;
     }
 
     label.margin-toggle:not(.sidenote-number) {
