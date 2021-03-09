@@ -166,6 +166,22 @@ pre {
   }
 }
 
+/* Show the language name in the code block's corner */
+pre code[data-lang]:not([data-lang=""])::before {
+    font-family: Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    font-style:normal;
+    font-size: 1rem;
+    content: attr(data-lang);
+    display: block;
+    position: absolute;
+    margin-left: 0%;
+    margin-top: -2em;
+    font-weight: bold;
+    background-color: inherit;
+    color: $gruvbox-dark4;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
 code {
   font-family: $code-font-family;
   font-size: 80%;

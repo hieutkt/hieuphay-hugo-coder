@@ -49,6 +49,13 @@
     color: $fg-color-dark;
   }
 
+  pre {
+    code[data-lang]:not([data-lang=""])::before {
+      color: $gruvbox-dark4-dark;
+    }
+  }
+
+
   kbd {
     -moz-box-shadow:0 1px 0 $alt-bg-color-dark,0 0 0 2px $muted-bg-color-dark inset;
     -webkit-box-shadow:0 1px 0 $alt-bg-color-dark,0 0 0 2px $muted-bg-color-dark inset;
