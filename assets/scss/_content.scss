@@ -48,8 +48,7 @@
       color: $gruvbox-light4;
     }
     h4::before {
-      content: "";
-      margin-right: 0.5rem;
+      content: "· ";
       font-weight: 400;
       font-family: $symbol-font-family;
       color: $gruvbox-light4;
