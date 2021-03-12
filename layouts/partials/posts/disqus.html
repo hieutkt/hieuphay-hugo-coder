@@ -18,6 +18,12 @@
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
+    // Disqus theme switching
+    document.addEventListener('themeChanged', function (e) {
+        if (document.readyState == 'complete') {
+        DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
 </script>
 {{ if eq .Site.Language.Lang  "vi"}}
 <noscript>Hãy bật JavaScript để xem <a href="https://disqus.com/?ref_noscript">bình luận được cung cấp bởi Disqus.</a></noscript>

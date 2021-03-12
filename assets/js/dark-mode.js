@@ -25,4 +25,7 @@ function setTheme(theme) {
   localStorage.setItem('colorscheme', theme);
   body.classList.remove('colorscheme-' + inverse);
   body.classList.add('colorscheme-' + theme);
+  // Create and send event
+  const event = new Event('themeChanged');
+  document.dispatchEvent(event);
 }
