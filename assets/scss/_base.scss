@@ -251,16 +251,17 @@ table tr th:last-child {
   border-right: 0;
 }
 
+dt {
+  font-weight: bold;
+  padding: 2px 4px;
+  color: mix($main-fg-color, $gruvbox-bright-purple, 50%);
+}
 dl {
     background-color: $emph-bg-color;
     box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
     color: inhehit;
     padding: 10px;
     // border-radius: 10px;
-}
-dt {
-  font-weight: bold;
-  padding: 2px 4px;
 }
 
 img {
