@@ -2,7 +2,7 @@
 
   .content {
     article {
-      *:not(header) a {
+      > *:not(header) a {
         &:hover{
           color: $link-color-dark;
         }

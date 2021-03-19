@@ -22,7 +22,7 @@
         }
       }
     }
-    *:not(header) a {
+    > :not(header) a {
       color: inherit;
       text-decoration-line: underline;
       text-decoration-style: dotted;
