@@ -2,6 +2,11 @@
 
   .content {
     article {
+      *:not(header) a {
+        &:hover{
+          color: $link-color-dark;
+        }
+      }
       h2, h3, h4 {
         &::before {
           color: lighten($bg-color-dark, 20%);

@@ -22,15 +22,13 @@
         }
       }
     }
-    > div {
-      a {
-        color: inherit;
-        text-decoration-line: underline;
-        text-decoration-style: dotted;
-        &:hover {
-          text-decoration-style: solid;
-          color: $link-color;
-        }
+    *:not(header) a {
+      color: inherit;
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
+      &:hover {
+        text-decoration-style: solid;
+        color: $link-color;
       }
     }
     h2::before {
