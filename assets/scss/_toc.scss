@@ -23,14 +23,8 @@
         max-height: 80%;
         overflow: auto;
     }
-
-
-
     /* How big is the text “Table of Contents” and space around it */
     .ox-hugo-toc .heading {
-        /* width: 100%; */
-        /* font-size: 13pt; */
-        /* max-width: 9em; */ /* border: 0; */ /* font-weight: normal; */ font-style: normal;
         font-weight: 900;
         font-size: 2.2 rem;
         padding-left: 0.5em;
@@ -39,22 +33,18 @@
         padding-bottom: 0.5em;
         margin: 0;
     }
-
     .ox-hugo-toc:hover .heading:after {
         content: ' Table of Contents';
     }
-
     /* Intially have the TOC folded up; show it if the mouse hovers it */
     .ox-hugo-toc ul {
         max-width: 95%;
         display: none;
         text-align: left;
     }
-
     .ox-hugo-toc li, .ox-hugo-toc ul, .ox-hugo-toc a, .ox-hugo-toc code {
         background: inherit;
     }
-
     .ox-hugo-toc:hover ul {
         background: inherit;
         width: 100%;
@@ -84,32 +74,28 @@
             transition: height .35s ease;
         }
     }
-
-}
-
-.toc_sticky {
-    position: fixed;
-    top: 0;
-    width: 90%;
-    z-index: 999;
-    .heading {
-        opacity: 0.6;
+    .toc_sticky {
+        position: fixed;
+        top: 0;
+        width: 90%;
+        z-index: 999;
+        .heading {
+            opacity: 0.6;
+        }
+        .heading.toc_active {
+            opacity: 1;
+        }
+        > ul.collapse {
+            opacity: 0.6;
+        }
     }
-    .heading.toc_active {
-        opacity: 1;
+    .toc_collapse {
+        height: 0px !important;
+        overflow: hidden;
+        position: fixed;
     }
-    > ul.collapse {
-        opacity: 0.6;
+    .toc_active {
+        color: $link-color;
+        transition: ease-in-out 0.3s;
     }
-}
-
-.toc_collapse {
-    height: 0px !important;
-    overflow: hidden;
-    position: fixed;
-}
-
-.toc_active {
-    color: $link-color;
-    transition: ease-in-out 0.3s;
 }
