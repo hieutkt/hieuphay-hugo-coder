@@ -12,9 +12,6 @@
         min-width: auto !important;
 
         background: $muted-bg-color;
-        /* font-size: 10pt; */
-        /* line-height: 12pt; */
-        /* text-align: right; */
 
         box-shadow: 0 0 1em #777777;
         -webkit-box-shadow: 0 0 1em #777777;
@@ -33,10 +30,7 @@
     .ox-hugo-toc .heading {
         /* width: 100%; */
         /* font-size: 13pt; */
-        /* max-width: 9em; */
-        /* border: 0; */
-        /* font-weight: normal; */
-        font-style: normal;
+        /* max-width: 9em; */ /* border: 0; */ /* font-weight: normal; */ font-style: normal;
         font-weight: 900;
         font-size: 2.2 rem;
         padding-left: 0.5em;
@@ -65,13 +59,57 @@
         background: inherit;
         width: 100%;
         display: block;
-        /* padding: 0.5em; */
-        /* margin-top: -1.5em; */
     }
 }
 
 @media (max-width: 768px) {
-    .ox-hugo-toc .heading:after {
-        content: " Table of Contents"
+    .ox-hugo-toc{
+        .heading{
+            -webkit-transform: translate3d(0, 0, 0);
+            box-shadow: 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
+            background: $muted-bg-color;
+            text-align: center;
+            &:after {
+                content: " Table of Contents"
+            }
+        }
+        > ul {
+            -webkit-transform: translate3d(0, 0, 0);
+            box-shadow: 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
+            background: $muted-bg-color;
+            position: relative;
+            margin-top: 0;
+            height: 500px;
+            overflow-y: scroll;
+            transition: height .35s ease;
+        }
     }
+
+}
+
+.toc_sticky {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 999;
+    .heading {
+        opacity: 0.6;
+    }
+    .heading.toc_active {
+        opacity: 1;
+    }
+    > ul.collapse {
+        opacity: 0.6;
+    }
+}
+
+.toc_collapse {
+    height: 0px !important;
+    overflow: hidden;
+    position: fixed;
+}
+
+.toc_active {
+    color: $link-color;
+    transition: ease-in-out 0.3s;
 }

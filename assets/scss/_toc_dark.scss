@@ -1,10 +1,25 @@
 @mixin toc_dark {
-    @media (min-width: 768px) {
-        /*TOC inspired by https://orgmode.org/worg/ */
-        .ox-hugo-toc {
-            background: $muted-bg-color-dark;
-        }
+  @media (min-width: 768px) {
+    /*TOC inspired by https://orgmode.org/worg/ */
+    .ox-hugo-toc {
+      background: $muted-bg-color-dark;
     }
+  }
+  @media (max-width: 768px) {
+    .ox-hugo-toc {
+      .heading {
+        background: $muted-bg-color-dark;
+        box-shadow: 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
+      }
+      > ul {
+        background: $muted-bg-color-dark;
+        box-shadow: 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
+      }
+    }
+    .toc_active {
+      color: $link-color-dark;
+    }
+  }
 }
 
 body.colorscheme-dark {
