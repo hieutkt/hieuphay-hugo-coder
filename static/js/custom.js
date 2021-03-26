@@ -36,6 +36,8 @@ var sticky_offset = TocHeading.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky_offset) {
     TocDiv.classList.add("toc_sticky");
+    TocContent.classList.add("toc_collapse");
+    TocHeading.classList.remove("toc_active");
   } else {
     TocDiv.classList.remove("toc_sticky");
   }
