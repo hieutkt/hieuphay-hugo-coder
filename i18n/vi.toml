@@ -21,7 +21,7 @@ other = "Đọc trong {{ .Count }} phút"
 other = "Không tìm thấy trang"
 
 [page_does_not_exist]
-other = "Sorry, this page does not exist."
+other = "Xin lỗi, trang này không tồn tại."
 
 [head_back]
 other = "Quay trở về <a href=\"{{ . }}\">trang chủ</a>."
@@ -31,3 +31,24 @@ other = "Được vận hành bởi"
 
 [see_also]
 other = "Xem thêm trong"
+
+[note]
+other = "ghi chú"
+
+[tip]
+other = "mẹo"
+
+[example]
+other = "ví dụ"
+
+[question]
+other = "câu hỏi"
+
+[info]
+other = "thông tin"
+
+[warning]
+other = "lưu ý"
+
+[error]
+other = "lỗi"
