@@ -5,50 +5,49 @@
         z-index: 100; /*Float above everything*/
         position: fixed; right: 0em; top: 0em;
         margin-top: 15px; /* offset from the top of the screen */
-
         /* It shrinks and grows as necessary */
         padding: 0em !important;
         width: auto !important;
         min-width: auto !important;
-
         background: $muted-bg-color;
-
-        box-shadow: 0 0 1em #777777;
-        -webkit-box-shadow: 0 0 1em #777777;
-        -moz-box-shadow: 0 0 1em #777777;
-        -webkit-border-bottom-left-radius: 5px;
-        -moz-border-radius-bottomleft: 5px;
-
         /* Ensure doesn't flow off the screen when expanded */
         max-height: 80%;
         overflow: auto;
-    }
-    /* How big is the text “Table of Contents” and space around it */
-    .ox-hugo-toc .heading {
-        font-weight: 900;
-        font-size: 2.2 rem;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        margin: 0;
-    }
-    .ox-hugo-toc:hover .heading:after {
-        content: ' Table of Contents';
-    }
-    /* Intially have the TOC folded up; show it if the mouse hovers it */
-    .ox-hugo-toc ul {
-        max-width: 95%;
-        display: none;
-        text-align: left;
-    }
-    .ox-hugo-toc li, .ox-hugo-toc ul, .ox-hugo-toc a, .ox-hugo-toc code {
-        background: inherit;
-    }
-    .ox-hugo-toc:hover ul {
-        background: inherit;
-        width: 100%;
-        display: block;
+        /* Ornaments */
+        box-shadow: 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
+        /* How big is the text “Table of Contents” and space around it */
+        .heading {
+            font-weight: 900;
+            font-size: 2.2 rem;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            margin: 0;
+        }
+        /* Intially have the TOC folded up; show it if the mouse hovers it */
+        ul {
+            max-width: 95%;
+            display: none;
+            text-align: left;
+        }
+        li, ul, a, code {
+            background: inherit;
+        }
+        &:hover{
+            .heading{
+                color: $link-color;
+                transition: ease-in-out 0.3s;
+                &:after {
+                    content: ' Table of Contents';
+                }
+            }
+            ul {
+                background: inherit;
+                width: 100%;
+                display: block;
+            }
+        }
     }
 }
 

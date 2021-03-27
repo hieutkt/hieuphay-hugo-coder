@@ -3,6 +3,15 @@
     /*TOC inspired by https://orgmode.org/worg/ */
     .ox-hugo-toc {
       background: $muted-bg-color-dark;
+      box-shadow: 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
+      li, ul, a, code {
+        background: inherit;
+      }
+      &:hover{
+        .heading {
+          color: $link-color-dark;
+        }
+      }
     }
   }
   @media (max-width: 768px) {
