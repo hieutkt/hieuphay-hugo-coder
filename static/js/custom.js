@@ -12,9 +12,13 @@ var TocHeading = document.querySelector(".ox-hugo-toc .heading");
 var TocContent = document.querySelector(".ox-hugo-toc > ul");
 
 if (TocDiv != null) {
-    TocHeading.innerHTML = "<i class=\"fa fa-indent fa-fw\" aria-hidden=true></i>";
-    TocHeading.addEventListener("click", toggleToC);
-    TocContent.classList.add("toc_collapse");
+  TocHeading.innerHTML = "<i class=\"fa fa-indent fa-fw\" aria-hidden=true></i>";
+  TocHeading.addEventListener("click", toggleToC);
+  TocContent.classList.add("toc_collapse");
+  // Get the offset position of the navbar
+  var sticky_offset = TocHeading.offsetTop;
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
 }
 
 function toggleToC() {
@@ -27,10 +31,6 @@ function toggleToC() {
     }
 }
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-// Get the offset position of the navbar
-var sticky_offset = TocHeading.offsetTop;
 // Add the sticky class to the header when you reach its scroll position.
 // Remove "sticky" when you leave the scroll position
 function myFunction() {
