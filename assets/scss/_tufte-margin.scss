@@ -29,7 +29,8 @@ article {
     }
     & > div {
         & > p, dl, h2, h3, h4, h5, h6, div.highlight, & > blockquote, hr,
-        & > ul, & > figure, & > div.notice {
+        & > ul, & > figure, & > div.notice,
+        .epigraph {
             @extend .tufte-margin-reduced;
         }
     }
@@ -88,8 +89,13 @@ blockquote footer {
 }
 
 .epigraph blockquote {
+    font-size: 2rem;
+    font-style: italic;
     background-color: $main-bg-color !important;
-    box-shadow: none !important;
+    border-left: none !important;
+    footer {
+        margin-top: 1rem;
+    }
 }
 
 div.fullwidth,
