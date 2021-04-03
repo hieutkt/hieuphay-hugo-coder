@@ -239,8 +239,8 @@ kbd {
 
 blockquote {
   margin: 0;
-  background-color: $emph-bg-color;
-  box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
+  background-color: #00000010;
+  border-left: 3px solid $link-color;
   padding: 10px;
 }
 

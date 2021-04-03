@@ -77,8 +77,8 @@
   }
 
   blockquote {
-    background-color: $emph-bg-color-dark;
-    box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
+    background-color: #ffffff10;
+    border-left: 3px solid $link-color-dark;
   }
 
   table td,
