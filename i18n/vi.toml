@@ -1,8 +1,14 @@
 [category]
 other = "phân loại"
 
+[categories]
+other = "phân loại"
+
 [tag]
-other = "tag"
+other = "nhãn"
+
+[tags]
+other = "các nhãn"
 
 [series]
 other = "chuỗi bài"
@@ -10,8 +16,11 @@ other = "chuỗi bài"
 [author]
 other = "tác giả"
 
+[authors]
+other = "các tác giả"
+
 [posts]
-other = "bài viết"
+other = "các bài viết"
 
 [reading_time]
 one = "Đọc trong một phút"
