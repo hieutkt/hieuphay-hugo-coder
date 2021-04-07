@@ -231,7 +231,7 @@ kbd {
     border-radius:3px;
     box-shadow:0 2px 0 $alt-bg-color,0 0 0 2px $gruvbox-dark3 inset;
     color: $main-fg-color;
-    font-family: Iosevka Web;
+    font-family: $code-font-family;
     /* margin:0 .1em; */
     padding: 0 .3em;
     text-shadow:0 1px 0 $muted-bg-color;
