@@ -85,8 +85,8 @@
     font-display: swap;
     font-weight: 500;
     font-style: normal;
-    src: url("woff2/Alegreya-Medium.woff2") format('woff2'),
-         url("woff/Alegreya-Medium.woff") format('woff');
+    src: url("../woff2/Alegreya-Medium.woff2") format('woff2'),
+         url("../woff/Alegreya-Medium.woff") format('woff');
 }
 
 @font-face {
