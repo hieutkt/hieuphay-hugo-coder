@@ -17,19 +17,17 @@
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 400;
-    font-variant: small-caps;
     src: url("../woff2/AlegreyaSC-Regular.woff2") format('woff2'),
          url("../woff/AlegreyaSC-Regular.woff") format('woff');
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 400;
-    font-variant: small-caps;
     font-style: italic;
     src: url("../woff2/AlegreyaSC-Italic.woff2") format('woff2'),
          url("../woff/AlegreyaSC-Italic.woff") format('woff');
@@ -54,19 +52,18 @@
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 500;
-    font-variant: small-caps;
+    font-style: normal;
     src: url("../woff2/AlegreyaSC-Medium.woff2") format('woff2'),
          url("../woff/AlegreyaSC-Medium.woff") format('woff');
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 500;
-    font-variant: small-caps;
     font-style: italic;
     src: url("../woff2/AlegreyaSC-MediumItalic.woff2") format('woff2'),
          url("../woff/AlegreyaSC-MediumItalic.woff") format('woff');
@@ -90,19 +87,17 @@
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 700;
-    font-variant: small-caps;
     src: url("../woff2/AlegreyaSC-Bold.woff2") format('woff2'),
          url("../woff/AlegreyaSC-Bold.woff") format('woff');
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 700;
-    font-variant: small-caps;
     font-style: italic;
     src: url("../woff2/AlegreyaSC-BoldItalic.woff2") format('woff2'),
          url("../woff/AlegreyaSC-BoldItalic.woff") format('woff');
@@ -127,19 +122,17 @@
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 800;
-    font-variant: small-caps;
     src: url("../woff2/AlegreyaSC-ExtraBold.woff2") format('woff2'),
          url("../woff/AlegreyaSC-ExtraBold.woff") format('woff');
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 800;
-    font-variant: small-caps;
     font-style: italic;
     src: url("../woff2/AlegreyaSC-ExtraBoldItalic.woff2") format('woff2'),
          url("../woff/AlegreyaSC-ExtraBoldItalic.woff") format('woff');
@@ -163,19 +156,17 @@
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 900;
-    font-variant: small-caps;
     src: url("../woff2/AlegreyaSC-Black.woff2") format('woff2'),
          url("../woff/AlegreyaSC-Black.woff") format('woff');
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
+    font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 900;
-    font-variant: small-caps;
     font-style: italic;
     src: url("../woff2/AlegreyaSC-BlackItalic.woff2") format('woff2'),
          url("../woff/AlegreyaSC-BlackItalic.woff") format('woff');

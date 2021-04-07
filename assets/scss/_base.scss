@@ -13,7 +13,7 @@ html {
 body {
   color: $fg-color;
   background-color: $bg-color;
-	font-family: $font-family;
+	font-family: $serif-font-family;
   font-feature-settings: 'liga' on, 'lnum' on;
   font-variant-numeric: proportional-nums;
 	font-size: 1.8em;
@@ -79,7 +79,7 @@ h6 {
 }
 
 h1 {
-  font-variant: small-caps;
+  font-family: $sc-font-family;
   font-size: 3.2rem;
   line-height: 3.6rem;
 
@@ -92,7 +92,9 @@ h1 {
 h2, #bibliography {
   font-size: 2.8rem;
   line-height: 3.2rem;
-
+  p:first-of-type:first-line {
+    font-family: $sc-font-family;
+  }
   @media only screen and (max-width: 768px) {
     font-size: 2.6rem;
     line-height: 3rem;
@@ -153,7 +155,7 @@ b, strong {
 }
 
 .acr {
-  font-variant: small-caps;
+  font-family: $sc-font-family;
 }
 
 .highlight>div,
