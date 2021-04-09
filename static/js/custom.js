@@ -1,3 +1,13 @@
+// Auto resize iframes
+function resizeIframe(obj) {
+  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 50 + 'px';
+}
+var Iframes = document.querySelectorAll(".content .iframe-container > iframe");
+for (iframe of Iframes) {
+  iframe.setAttribute("onload", "resizeIframe(this)");
+  iframe.setAttribute("frameBorder", "0");
+}
+
 // Using ::before in shell code block but only allow to select text
 var ShellPreElements = document.querySelectorAll("pre code[data-lang=\"shell\"]");
 if (ShellPreElements != null) {

@@ -305,6 +305,10 @@ figure {
   text-align: center;
 }
 
+iframe {
+  width: 100%;
+}
+
 .preload-transitions * {
   $null-transition: none !important;
 
