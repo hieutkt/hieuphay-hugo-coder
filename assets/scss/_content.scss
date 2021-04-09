@@ -35,25 +35,40 @@
         color: $link-color;
       }
     }
-    h2::before {
-      content: "\1F650";
-      margin-right: 0.5rem;
-      font-weight: 400;
-      font-family: $symbol-font-family;
-      color: $gruvbox-light4;
-    }
-    h3::before {
-      content: "⁖ ";
-      margin-right: 0.5rem;
-      font-weight: 400;
-      font-family: $symbol-font-family;
-      color: $gruvbox-light4;
-    }
-    h4::before {
-      content: "· ";
-      font-weight: 400;
-      font-family: $symbol-font-family;
-      color: $gruvbox-light4;
+    @media (min-width: 1024px) {
+      h2::before {
+        content: "\1F650";
+        display: block;
+        position: absolute;
+        text-align: right;
+        margin-left: -3rem;
+        margin-top: 0.5rem;
+        font-weight: 400;
+        font-family: $symbol-font-family;
+        color: $gruvbox-light4;
+      }
+      h3::before {
+        content: "⁖";
+        display: block;
+        position: absolute;
+        text-align: right;
+        margin-left: -2rem;
+        margin-top: 0.3rem;
+        font-weight: 400;
+        font-family: $symbol-font-family;
+        color: $gruvbox-light4;
+      }
+      h4::before {
+        content: "·";
+        display: block;
+        position: absolute;
+        text-align: right;
+        margin-left: -1.5rem;
+        margin-top: 0.3rem;
+        font-weight: 400;
+        font-family: $symbol-font-family;
+        color: $gruvbox-light4;
+      }
     }
     footer {
       margin-top: 4rem;
