@@ -1,12 +1,13 @@
 // Auto resize iframes
-function resizeIframe(obj) {
-  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 50 + 'px';
-}
-var Iframes = document.querySelectorAll(".content .iframe-container > iframe");
-for (iframe of Iframes) {
-  iframe.setAttribute("onload", "resizeIframe(this)");
-  iframe.setAttribute("frameBorder", "0");
-}
+window.onload = function(e) {
+  var iframes = document.querySelectorAll(".content iframe");
+  // Resize all iframes to its contents:
+  for( var i = 0; i < iframes.length; i++) {
+    iframes[i].width  = iframes[i].contentWindow.document.body.scrollWidth;
+    iframes[i].height = iframes[i].contentWindow.document.body.scrollHeight;
+    iframes[i].scrolling = "no";
+  }
+};
 
 // Using ::before in shell code block but only allow to select text
 var ShellPreElements = document.querySelectorAll("pre code[data-lang=\"shell\"]");

@@ -296,16 +296,20 @@ dl {
     // border-radius: 10px;
 }
 
-img {
-  max-width: 100%;
-  box-shadow: 5px 6px 10px $gruvbox-dark3;
-}
-
 figure {
   text-align: center;
 }
 
+img, iframe {
+  max-width: 100%;
+  box-shadow: 5px 6px 10px $gruvbox-dark3;
+}
+
 iframe {
+  align: middle;
+  border: none;
+  background: transparent;
+  overflow: hidden;
   width: 100%;
 }
 
