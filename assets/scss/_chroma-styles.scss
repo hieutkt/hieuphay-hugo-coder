@@ -1,5 +1,5 @@
 
-/* Background */ .chroma { color: $gruvbox-gray;
+/* Background */ .chroma { color: $gruvbox-light0;
                            background-color: $gruvbox-dark0-soft }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err {  }
@@ -70,15 +70,15 @@
 /* CommentPreproc */ .chroma .cp { color: $gruvbox-dark4; font-style: italic }
 /* CommentPreprocFile */ .chroma .cpf { color: $gruvbox-dark4; font-style: italic }
 /* Generic */ .chroma .g { color: $gruvbox-bright-purple }
-/* GenericDeleted */ .chroma .gd { color: $gruvbox-bright-purple }
+/* GenericDeleted */ .chroma .gd { color: $gruvbox-bright-red }
 /* GenericEmph */ .chroma .ge { color: $gruvbox-bright-purple }
 /* GenericError */ .chroma .gr { color: $gruvbox-bright-purple }
 /* GenericHeading */ .chroma .gh { color: $gruvbox-bright-purple }
-/* GenericInserted */ .chroma .gi { color: $gruvbox-bright-purple }
+/* GenericInserted */ .chroma .gi { color: $gruvbox-bright-green }
 /* GenericOutput */ .chroma .go { color: $gruvbox-bright-purple }
 /* GenericPrompt */ .chroma .gp { color: $gruvbox-bright-purple }
 /* GenericStrong */ .chroma .gs { color: $gruvbox-bright-purple }
-/* GenericSubheading */ .chroma .gu { color: $gruvbox-bright-purple }
+/* GenericSubheading */ .chroma .gu { color: $gruvbox-bright-orange }
 /* GenericTraceback */ .chroma .gt { color: $gruvbox-bright-purple }
 /* GenericUnderline */ .chroma .gl { color: $gruvbox-bright-purple }
 /* Text */ .chroma {  }

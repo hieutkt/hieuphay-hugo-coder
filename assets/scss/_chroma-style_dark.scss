@@ -1,5 +1,5 @@
 @mixin chroma-style_dark {
-  /* Background */ .chroma { color: $gruvbox-gray-dark;
+  /* Background */ .chroma { color: $gruvbox-light0-dark;
                              background-color: $gruvbox-dark0-soft-dark }
   /* Other */ .chroma .x {  }
   /* Error */ .chroma .err {  }
@@ -70,15 +70,15 @@
   /* CommentPreproc */ .chroma .cp { color: $gruvbox-dark4-dark; font-style: italic }
   /* CommentPreprocFile */ .chroma .cpf { color: $gruvbox-dark4-dark; font-style: italic }
   /* Generic */ .chroma .g { color: $gruvbox-bright-purple-dark }
-  /* GenericDeleted */ .chroma .gd { color: $gruvbox-bright-purple-dark }
+  /* GenericDeleted */ .chroma .gd { color: $gruvbox-bright-red-dark }
   /* GenericEmph */ .chroma .ge { color: $gruvbox-bright-purple-dark }
   /* GenericError */ .chroma .gr { color: $gruvbox-bright-purple-dark }
   /* GenericHeading */ .chroma .gh { color: $gruvbox-bright-purple-dark }
-  /* GenericInserted */ .chroma .gi { color: $gruvbox-bright-purple-dark }
+  /* GenericInserted */ .chroma .gi { color: $gruvbox-bright-green-dark }
   /* GenericOutput */ .chroma .go { color: $gruvbox-bright-purple-dark }
   /* GenericPrompt */ .chroma .gp { color: $gruvbox-bright-purple-dark }
   /* GenericStrong */ .chroma .gs { color: $gruvbox-bright-purple-dark }
-  /* GenericSubheading */ .chroma .gu { color: $gruvbox-bright-purple-dark }
+  /* GenericSubheading */ .chroma .gu { color: $gruvbox-bright-orange-dark }
   /* GenericTraceback */ .chroma .gt { color: $gruvbox-bright-purple-dark }
   /* GenericUnderline */ .chroma .gl { color: $gruvbox-bright-purple-dark }
   /* Text */ .chroma {  }
