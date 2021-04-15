@@ -94,10 +94,10 @@
     box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
   }
   :target, a:target::before {
-    animation: blinker-dark 0.5s linear 2;
+    animation: blinker-dark 2s ease-out;
   }
   @keyframes blinker-dark {
-    50% {
+    from {
       background-color: $gruvbox-bright-aqua;
     }
   }

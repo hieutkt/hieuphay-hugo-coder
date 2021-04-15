@@ -310,7 +310,7 @@ iframe {
 
 :target {
   transition: background-color 0.5s ease-out;
-  animation: blinker 0.5s linear 2;
+  animation: blinker 2s ease-out;
 }
 
 a:target::before {
@@ -322,11 +322,11 @@ a:target::before {
   margin-left: -2rem;
   font-weight: 400;
   font-family: $symbol-font-family;
-  animation: blinker 0.5s linear 2;
+  animation: blinker 2s ease-out;
 }
 
 @keyframes blinker {
-  50% {
+  from {
     background-color: $gruvbox-bright-yellow-dark;
   }
 }
