@@ -308,6 +308,28 @@ iframe {
   width: 100%;
 }
 
+:target {
+  transition: background-color 0.5s ease-out;
+  animation: blinker 0.5s linear 2;
+}
+
+a:target::before {
+  content: "→";
+  display: block;
+  position: absolute;
+  text-align: right;
+  margin-top: 0.3rem;
+  margin-left: -2rem;
+  font-weight: 400;
+  font-family: $symbol-font-family;
+  animation: blinker 0.5s linear 2;
+}
+
+@keyframes blinker {
+  50% {
+    background-color: $gruvbox-bright-yellow-dark;
+  }
+}
 
 .preload-transitions * {
   $null-transition: none !important;
