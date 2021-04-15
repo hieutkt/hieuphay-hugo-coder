@@ -93,10 +93,6 @@
     background-color: $emph-bg-color-dark;
     box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
   }
-
-  img, iframe {
-    box-shadow: 5px 6px 10px adjust-color($emph-bg-color-dark, $lightness: -50%);
-  }
 }
 
 body.colorscheme-dark {

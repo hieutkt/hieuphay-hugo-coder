@@ -11,6 +11,12 @@
           color: lighten($bg-color-dark, 20%);
         }
       }
+      > div {
+        img, iframe {
+          box-shadow: 5px 6px 10px adjust-color($emph-bg-color-dark, $lightness: -50%);
+        }
+      }
+    }
     }
     .list {
       ul {
