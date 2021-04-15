@@ -35,6 +35,12 @@
         color: $link-color;
       }
     }
+    > div {
+      img, iframe {
+        max-width: 100%;
+        box-shadow: 5px 6px 10px $gruvbox-dark3;
+      }
+    }
     @media (min-width: 1024px) {
       h2::before {
         content: "\1F650";

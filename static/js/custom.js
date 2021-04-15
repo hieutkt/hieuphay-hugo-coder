@@ -1,6 +1,6 @@
 // Auto resize iframes
 window.onload = function(e) {
-  var iframes = document.querySelectorAll(".content iframe");
+  var iframes = document.querySelectorAll("article > div iframe");
   // Resize all iframes to its contents:
   for( var i = 0; i < iframes.length; i++) {
     iframes[i].width  = iframes[i].contentWindow.document.body.scrollWidth;

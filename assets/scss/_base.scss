@@ -300,10 +300,6 @@ figure {
   text-align: center;
 }
 
-img, iframe {
-  max-width: 100%;
-  box-shadow: 5px 6px 10px $gruvbox-dark3;
-}
 
 iframe {
   align: middle;
@@ -312,9 +308,6 @@ iframe {
   width: 100%;
 }
 
-#disqus_thread iframe {
-  padding: 0.5em;
-}
 
 .preload-transitions * {
   $null-transition: none !important;
