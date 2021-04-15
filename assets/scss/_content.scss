@@ -41,6 +41,9 @@
         box-shadow: 5px 6px 10px $gruvbox-dark3;
       }
     }
+    .katex {
+      font-size: inherit;
+    }
     @media (min-width: 1024px) {
       h2::before {
         content: "\1F650";
