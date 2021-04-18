@@ -36,12 +36,12 @@
           <img src='{{ .Params.featuredImage }}' alt="Featured image"/>
         {{ end }}
         {{ .Content }}
-          <!-- Implementing backlinks -->
-        {{ partial "posts/backlinks.html" . }}
       </div>
 
 
       <footer>
+          <!-- Implementing backlinks -->
+        {{ partial "posts/backlinks.html" . }}
         {{ partial "posts/series.html" . }}
         {{ partial "posts/disqus.html" . }}
         {{ partial "posts/commento.html" . }}
