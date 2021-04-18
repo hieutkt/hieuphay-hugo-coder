@@ -19,7 +19,6 @@ body {
 	font-size: 1.8em;
 	font-weight: 500;
   line-height: 1.4em;
-  transition: all 0.25s ease-in;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
     line-height: 1.6em;
@@ -31,14 +30,12 @@ body {
 }
 
 a {
-  // font-weight: 400;
   color: $link-color;
   text-decoration: none;
-  transition: all 0.25s ease-in;
-
   &:focus,
   &:hover {
     text-decoration: underline;
+    transition: all 0.25s ease-in;
   }
 }
 
@@ -162,6 +159,7 @@ b, strong {
 .acr {
   font-family: $sc-font-family;
 }
+
 
 .highlight>div,
 .highlight>pre {
