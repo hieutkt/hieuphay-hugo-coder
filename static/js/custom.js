@@ -1,3 +1,17 @@
+// Dropcaps
+var DropcapLine = document.querySelector("article > div > p:first-child")
+if (DropcapLine != null) {
+  var split = DropcapLine.textContent.split(" ");
+  var DropcapWord = split[0];
+  var DropcapRest = split.slice(1,split.length).join(" ");
+  var DropcapMatch = /^(["']?.)(.*)$/.exec(DropcapWord);
+  var DropcapChar = DropcapMatch[1];
+  var DropcapCharRest = DropcapMatch[2];
+  DropcapLine.innerHTML = "<span role='text'><span aria-hidden='true'><span class='dropcap'>"
+    +DropcapChar+"</span>"+DropcapCharRest+"</span><span class='visually-hidden'>" + DropcapWord
+    +"</span></span> " + DropcapRest;
+}
+
 // Auto resize iframes
 window.onload = function(e) {
   var iframes = document.querySelectorAll("article > div iframe");

@@ -40,18 +40,6 @@
         max-width: 100%;
         box-shadow: 5px 6px 10px $gruvbox-dark3;
       }
-      > p:first-child::first-letter {
-        float: left;
-        font-family: $sc-font-family;
-        font-weight: 700;
-        font-size: 5.3rem;
-        line-height: 4rem;
-        padding-top: 0.18em;
-        color: $link-color;
-        padding-right: 10px;
-        padding-left: 3px;
-        text-shadow: 5px 3px 3px $gruvbox-dark3;
-      }
     }
     .katex {
       font-size: inherit;
