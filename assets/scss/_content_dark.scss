@@ -17,6 +17,7 @@
         }
         > p:first-child::first-letter {
           color: $link-color-dark;
+        text-shadow: 5px 3px 3px adjust-color($emph-bg-color-dark, $lightness: -50%);
         }
       }
     }
