@@ -1,0 +1,39 @@
+.link-icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 ForkAwesome;
+    font-size: 50%;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: super;
+    display: inline;
+}
+
+article > :not(header) {
+    a[href*="tag"]:after {
+        @extend .link-icon;
+        content: "\f02b";
+    }
+
+
+    a[href$="en/tags"]:after{
+        @extend .link-icon;
+        content: "\f02c";
+    }
+
+    a[href$="vi/tags"]:after{
+        @extend .link-icon;
+        content: "\f02c";
+    }
+
+
+    a[href$="en/posts"]:after,{
+        @extend .link-icon;
+        content: "\f03a";
+    }
+
+    a[href$="vi/posts"]:after {
+        @extend .link-icon;
+        content: "\f03a";
+    }
+}
