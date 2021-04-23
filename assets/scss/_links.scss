@@ -9,6 +9,11 @@
     display: inline;
 }
 
+a[href$="#"] {
+    pointer-events: none;
+    text-decoration: 1px;
+}
+
 article > :not(header) {
     a[href*="tag"]:after {
         @extend .link-icon;
