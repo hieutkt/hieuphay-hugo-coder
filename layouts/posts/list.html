@@ -10,7 +10,7 @@
     </h1>
     {{ .Content }}
     <ul>
-      {{- range .Paginator.Pages -}}
+      {{- range where .Paginator.Pages ".Params.exclude" "!=" "true" -}}
         {{- .Render "li" -}}
       {{- end -}}
     </ul>

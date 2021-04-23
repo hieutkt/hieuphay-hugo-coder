@@ -1,0 +1,15 @@
+<!-- Obtain all posts with tag -->
+{{ $tag := .Get "tag" }}
+<ul>
+    {{ range $ind,$art := .Site.Pages.ByDate }}
+        {{ if in $art.Params.tags $tag }}
+        <li>
+            {{ if eq $art.Permalink $.Page.Permalink}}
+                {{ $art.Params.title }}
+            {{ else }}
+                <a href="{{ $art.Permalink }}">{{ $art.Params.title }}</a>
+            {{ end }}
+        </li>
+        {{ end }}
+    {{ end }}
+</ul>
