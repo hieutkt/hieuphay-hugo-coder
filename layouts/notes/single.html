@@ -13,14 +13,42 @@
           </h1>
         </div>
         <div class="post-meta">
-          <div class="article-info">
-            <span class="article-doi">
-                {{ with .Page.Params.doi }}
-                <i class="fa fa-link" aria-hidden="true"></i>
-                <span>doi: </span><a href="https://doi.org/{{ . }}">{{ . }}</a>
-                {{ end }}
-            </span>
-          </div>
+            <div>
+                <span class="article-author">
+                    {{ with .Page.Params.authorname }}
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    Author: {{ . }}
+                    {{ end }}
+                </span>
+            </div>
+            <div>
+                <span class="article-journal">
+                    {{ with .Page.Params.journal }}
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Journal: {{ . }}
+                    {{ end }}
+                </span>
+            </div>
+            <div>
+                <span class="posted-on">
+                    {{ with .Page.Params.year }}
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    Year: {{ .  }}
+                    {{ end }}
+                </span>
+            </div>
+            <div class="article-info">
+                <span class="article-doi">
+                    {{ with .Page.Params.doi }}
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <span>doi: </span><a href="{{ . }}">{{ . }}</a>
+                    {{ end }}
+                    {{ with .Page.Params.url }}
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <span>url: </span><a href="{{ . }}">{{ . }}</a>
+                    {{ end }}
+                </span>
+            </div>
           {{ with .Page.Params.Authors }}{{ partial "taxonomy/authors.html" . }}{{ end }}
           {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
           {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
