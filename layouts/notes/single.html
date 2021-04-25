@@ -37,25 +37,26 @@
                       Published: {{ dateFormat "01 Feb 2006" . }}
                       {{ end }}
                     {{ else }}
-                      {{ with .Page.Params.bibinfo.year }}
                       <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                      Year: {{ .  }}
-                      {{ end }}
+                      Published:
+                      {{ with .Page.Params.bibinfo.month }}{{ . | humanize }}{{end}}
+                      {{ with .Page.Params.bibinfo.year }} {{ . }} {{ end }}
                     {{ end }}
                 </span>
             </div>
-            <div class="article-info">
-                <span class="article-doi">
-                    {{ with .Page.Params.bibinfo.doi }}
-                    <i class="fa fa-link" aria-hidden="true"></i>
-                    <span>doi: </span><a href="{{ . }}">{{ . }}</a>
-                    {{ end }}
-                    {{ with .Page.Params.bibinfo.url }}
-                    <i class="fa fa-link" aria-hidden="true"></i>
-                    <span>url: </span><a href="{{ . }}">{{ . }}</a>
-                    {{ end }}
-                </span>
+            {{ with .Page.Params.bibinfo.doi }}
+            <div>
+                <i class="fa fa-link" aria-hidden="true"></i>
+                <span class="smallcap">doi: </span><a href="{{ . }}">{{ . }}</a>
             </div>
+            {{ end }}
+            {{ with .Page.Params.bibinfo.url }}
+            <div>
+                <i class="fa fa-link" aria-hidden="true"></i>
+                <span class="smallcap">url: </span><a href="{{ . }}">{{ . }}</a>
+
+            </div>
+            {{ end }}
           {{ with .Page.Params.Authors }}{{ partial "taxonomy/authors.html" . }}{{ end }}
           {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
           {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
