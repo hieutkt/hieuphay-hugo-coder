@@ -220,26 +220,27 @@ code {
   font-size: 80%;
   font-weight: 400;
   background-color: $alt-bg-color;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2px 4px;
   color: $fg-color;
 }
 
 
 kbd {
-    -moz-border-radius:3px;
-    -moz-box-shadow:0 1px 0 $alt-bg-color,0 0 0 2px $muted-bg-color inset;
-    -webkit-border-radius:3px;
-    -webkit-box-shadow:0 1px 0 $alt-bg-color,0 0 0 2px $muted-bg-color inset;
-    background-color: $gruvbox-dark0-soft;
-    border:1px solid $main-bg-color;
-    border-radius:3px;
-    box-shadow:0 2px 0 $alt-bg-color,0 0 0 2px $gruvbox-dark3 inset;
-    color: $main-fg-color;
-    font-family: $code-font-family;
-    /* margin:0 .1em; */
-    padding: 0 .3em;
-    text-shadow:0 1px 0 $muted-bg-color;
+  font-size: 80%;
+  -moz-border-radius:3px;
+  -moz-box-shadow:0 1px 0 $alt-bg-color,0 0 0 2px $muted-bg-color inset;
+  -webkit-border-radius:3px;
+  -webkit-box-shadow:0 1px 0 $alt-bg-color,0 0 0 2px $muted-bg-color inset;
+  background-color: $gruvbox-dark0-soft;
+  border:1px solid $main-bg-color;
+  border-radius:3px;
+  box-shadow:0 2px 0 $alt-bg-color,0 0 0 2px $gruvbox-dark3 inset;
+  color: $main-fg-color;
+  font-family: $code-font-family;
+  /* margin:0 .1em; */
+  padding: 0 .3em;
+  text-shadow:0 1px 0 $muted-bg-color;
 }
 
 
