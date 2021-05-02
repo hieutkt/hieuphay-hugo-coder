@@ -17,7 +17,7 @@ body {
   font-feature-settings: 'liga' on, 'lnum' on;
   font-variant-numeric: proportional-nums;
 	font-size: 1.8em;
-	font-weight: 500;
+	font-weight: 400;
   line-height: 1.4em;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
@@ -296,7 +296,7 @@ dl {
     box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
     color: inhehit;
     padding: 10px;
-    // border-radius: 10px;
+    border-radius: 5px;
 }
 
 figure {
