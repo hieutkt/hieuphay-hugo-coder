@@ -93,13 +93,17 @@
     background-color: $emph-bg-color-dark;
     box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
   }
-  :target, a:target::before {
+  :target {
     animation: blinker-dark 2s ease-out;
   }
   @keyframes blinker-dark {
     from {
       background-color: $gruvbox-bright-aqua;
     }
+  }
+  a:target::before{
+    color: $main-fg-color-dark;
+    background-color: $gruvbox-bright-aqua;
   }
   .dropcap {
     color: $link-color-dark;
