@@ -24,7 +24,7 @@
 }
 
 article {
-    & > p, & > ul, & > figure {
+    & > p, & > ul, & > figure, & > div.notice {
         @extend .tufte-margin-reduced;
     }
     & > div {
