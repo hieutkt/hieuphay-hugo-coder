@@ -4,9 +4,14 @@
     {{ range $ind,$art := .Site.Pages.ByDate }}
         {{ if in $art.Params.tags $tag }}
         <li>
+            {{ if in $art.Params.tags "review" }}
+                <i class="fa fa-book" aria-hidden="true"></i>
+            {{ end}}
             {{ if eq $art.Permalink $.Page.Permalink}}
                 {{ $art.Params.title }}
             {{ else }}
+                {{ $notetags := $art.Params.tags | symdiff (intersect $art.Params.tags (slice $tag "review")) }}
+                <span class='marginnote'>{{ with $notetags }}{{ partial "taxonomy/tags.html" . }}{{ end }}</span>
                 <a href="{{ $art.Permalink }}">{{ $art.Params.title }}</a>
             {{ end }}
         </li>
