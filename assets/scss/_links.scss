@@ -13,31 +13,31 @@ a[href$="#"] {
     text-decoration: 1px;
 }
 
-article > :not(header) {
-    a[href*="tag"]:hover:after {
-        @extend .link-icon;
-        content: "\f02b";
-    }
+// article > :not(header) {
+//     a[href*="tag"]:hover:after {
+//         @extend .link-icon;
+//         content: "\f02b";
+//     }
 
 
-    a[href$="en/tags"]:hover:after{
-        @extend .link-icon;
-        content: "\f02c";
-    }
+//     a[href$="en/tags"]:hover:after{
+//         @extend .link-icon;
+//         content: "\f02c";
+//     }
 
-    a[href$="vi/tags"]:hover:after{
-        @extend .link-icon;
-        content: "\f02c";
-    }
+//     a[href$="vi/tags"]:hover:after{
+//         @extend .link-icon;
+//         content: "\f02c";
+//     }
 
 
-    a[href$="en/posts"]:hover:after,{
-        @extend .link-icon;
-        content: "\f03a";
-    }
+//     a[href$="en/posts"]:hover:after,{
+//         @extend .link-icon;
+//         content: "\f03a";
+//     }
 
-    a[href$="vi/posts"]:hover:after {
-        @extend .link-icon;
-        content: "\f03a";
-    }
-}
+//     a[href$="vi/posts"]:hover:after {
+//         @extend .link-icon;
+//         content: "\f03a";
+//     }
+// }
