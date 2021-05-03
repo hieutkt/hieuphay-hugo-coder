@@ -50,11 +50,13 @@
         display: block;
         position: absolute;
         text-align: right;
-        margin-left: -3rem;
+        margin-left: -2.5rem;
         margin-top: 0.5rem;
         font-weight: 400;
+        font-size: 80%;
         font-family: $symbol-font-family;
         color: $gruvbox-light4;
+        opacity: 50%;
       }
       h3::before {
         content: "⁖";
@@ -66,6 +68,7 @@
         font-weight: 400;
         font-family: $symbol-font-family;
         color: $gruvbox-light4;
+        opacity: 50%;
       }
       h4::before {
         content: "·";
@@ -77,6 +80,7 @@
         font-weight: 400;
         font-family: $symbol-font-family;
         color: $gruvbox-light4;
+        opacity: 50%;
       }
     }
     footer {
