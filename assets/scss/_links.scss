@@ -1,5 +1,4 @@
 .link-icon {
-    display: inline-block;
     font: normal normal normal 14px/1 ForkAwesome;
     font-size: 50%;
     text-rendering: auto;
@@ -15,29 +14,29 @@ a[href$="#"] {
 }
 
 article > :not(header) {
-    a[href*="tag"]:after {
+    a[href*="tag"]:hover:after {
         @extend .link-icon;
         content: "\f02b";
     }
 
 
-    a[href$="en/tags"]:after{
+    a[href$="en/tags"]:hover:after{
         @extend .link-icon;
         content: "\f02c";
     }
 
-    a[href$="vi/tags"]:after{
+    a[href$="vi/tags"]:hover:after{
         @extend .link-icon;
         content: "\f02c";
     }
 
 
-    a[href$="en/posts"]:after,{
+    a[href$="en/posts"]:hover:after,{
         @extend .link-icon;
         content: "\f03a";
     }
 
-    a[href$="vi/posts"]:after {
+    a[href$="vi/posts"]:hover:after {
         @extend .link-icon;
         content: "\f03a";
     }
