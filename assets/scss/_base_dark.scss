@@ -81,6 +81,12 @@
     border-left: 3px solid $link-color-dark;
   }
 
+  ul.list-tag{
+    div.tags a {
+      color: $link-color-dark;
+    }
+  }
+
   table td,
   table th {
     border: 2px solid $alt-fg-color-dark;

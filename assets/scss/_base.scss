@@ -267,6 +267,12 @@ blockquote {
   }
 }
 
+ul.list-tag{
+  div.tags a {
+    color: $link-color;
+  }
+}
+
 th,
 td {
   padding: 1.6rem;
