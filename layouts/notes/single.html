@@ -2,11 +2,12 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-  <section class="container post">
+  <section class="container note">
     <article>
       <header>
         <div class="post-title">
           <h1 class="title">
+            <div style='font-size:50%;opacity:0.5;'>Notes on:</div>
             <a class="title-link" href="{{ .Permalink | safeURL }}">
               {{ .Title }}
             </a>
@@ -68,6 +69,8 @@
           <img src='{{ .Params.featuredImage }}' alt="Featured image"/>
         {{ end }}
         {{ .Content }}
+          <hr>
+          <i>This post is in the collection of my <a href='{{ ref . "literature" }}'>published research notes</a>.</i>
       </div>
 
 
@@ -77,7 +80,6 @@
         {{ partial "posts/series.html" . }}
       </footer>
     </article>
-
     {{ partial "posts/math.html" . }}
   </section>
 {{ end }}
