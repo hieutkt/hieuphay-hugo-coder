@@ -5,19 +5,19 @@
 }
 
 html {
-	box-sizing: border-box;
-	font-size: 70%;
+  box-sizing: border-box;
+  font-size: 70%;
   scroll-behavior: smooth;
 }
 
 body {
   color: $fg-color;
   background-color: $bg-color;
-	font-family: $serif-font-family;
+  font-family: $serif-font-family;
   font-feature-settings: 'liga' on, 'lnum' on;
   font-variant-numeric: proportional-nums;
-	font-size: 1.8em;
-	font-weight: 400;
+  font-size: 1.8em;
+  font-weight: 400;
   line-height: 1.4em;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
@@ -26,7 +26,7 @@ body {
 }
 
 ::selection {
-    background: $muted-bg-color;
+  background: $muted-bg-color;
 }
 
 a {
@@ -153,12 +153,12 @@ h6 {
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px dashed $gruvbox-gray;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px dashed $gruvbox-gray;
+  margin: 1em 0;
+  padding: 0;
 }
 
 b, strong {
@@ -204,26 +204,26 @@ pre {
 
 /* Show the language name in the code block's corner */
 pre code[data-lang]:not([data-lang=""])::before {
-    font-family: Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
-    font-style:normal;
-    font-size: 1rem;
-    content: attr(data-lang);
-    display: block;
-    position: absolute;
-    margin-left: 0%;
-    margin-top: -2em;
-    font-weight: bold;
-    background-color: inherit;
-    color: $gruvbox-dark4;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  font-family: Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+  font-style:normal;
+  font-size: 1rem;
+  content: attr(data-lang);
+  display: block;
+  position: absolute;
+  margin-left: 0%;
+  margin-top: -2em;
+  font-weight: bold;
+  background-color: inherit;
+  color: $gruvbox-dark4;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* Also display a prompt if in console mode */
 pre code[data-lang="shell"] .line::before {
-    content: "$";
-    color: $gruvbox-dark4;
-    padding-right: 8px;
+  content: "$";
+  color: $gruvbox-dark4;
+  padding-right: 8px;
 }
 
 
@@ -310,11 +310,11 @@ dt {
   padding: 2px 4px;
 }
 dl {
-    background-color: $emph-bg-color;
-    box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
-    color: inhehit;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: $emph-bg-color;
+  box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
+  color: inhehit;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 figure {
