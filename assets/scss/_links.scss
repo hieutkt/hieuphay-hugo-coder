@@ -10,7 +10,7 @@
 
 a[href$="#"] {
     pointer-events: none;
-    text-decoration: 1px;
+    text-decoration-line: none !important;
 }
 
 // article > :not(header) {
