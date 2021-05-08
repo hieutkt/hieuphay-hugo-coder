@@ -92,9 +92,6 @@
     border: 2px solid $alt-fg-color-dark;
   }
 
-  dt {
-    color: mix($main-fg-color-dark, $gruvbox-bright-yellow-dark, 50%);
-  }
   dl {
     background-color: $emph-bg-color-dark;
     box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
