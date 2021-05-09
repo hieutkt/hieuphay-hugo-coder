@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 70%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -17,7 +17,7 @@ body {
   font-feature-settings: 'liga' on, 'lnum' on;
   font-variant-numeric: proportional-nums;
   font-size: 1.8em;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4em;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
@@ -50,7 +50,7 @@ h4,
 h5,
 h6 {
   font-family: $serif-font-family;
-  font-weight: 600;
+  font-weight: 700;
   color: $main-fg-color;
   hyphens: none;
   scroll-margin-top: 100px;
@@ -106,7 +106,7 @@ h2, #bibliography {
   text-align: right;
   margin-left: -1rem;
   margin-top: 0.3rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: $symbol-font-family;
   color: $gruvbox-light4;
   z-index: -1;
@@ -162,7 +162,7 @@ hr {
 }
 
 b, strong {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .underline {
@@ -185,7 +185,7 @@ pre {
   display: block;
   font-family: $code-font-family;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   overflow-x: auto;
   margin: 0;
 
@@ -231,7 +231,7 @@ pre code[data-lang="shell"] .line::before {
 code {
   font-family: $code-font-family;
   font-size: 80%;
-  font-weight: 400;
+  font-weight: 500;
   background-color: $alt-bg-color;
   border-radius: 5px;
   padding: 2px 4px;
@@ -346,7 +346,7 @@ a:target::before {
   text-align: right;
   margin-top: 0.35rem;
   margin-left: -2rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: $symbol-font-family;
 }
 
@@ -407,14 +407,14 @@ a:target::before {
 
 .container {
   margin: 0 auto;
-  max-width: 90rem;
+  max-width: 100rem;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .fab {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .fas {
@@ -430,7 +430,7 @@ a:target::before {
 }
 
 .fab {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .fas {
