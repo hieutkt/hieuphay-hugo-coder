@@ -88,7 +88,7 @@
     font-display: swap;
     font-weight: 600;
     font-style: normal;
-    src: url("../woff2/Alegreya/Alegreya-SemiBold.woff2") format('woff2'),
+    src: /* url("../woff2/Alegreya/Alegreya-SemiBold.woff2") format('woff2'), */
          url("../ttf/Alegreya/Alegreya-SemiBold.ttf") format('truetype'),
          url("../woff/Alegreya-Medium.woff") format('woff');
 }
@@ -98,7 +98,7 @@
     font-display: swap;
     font-weight: 500;
     font-style: italic;
-    src: url("../woff2/Alegreya/Alegreya-SemiBoldItalic.woff2") format('woff2'),
+    src: /* url("../woff2/Alegreya/Alegreya-SemiBoldItalic.woff2") format('woff2'), */
          url("../ttf/Alegreya/Alegreya-SemiBoldItalic.ttf") format('truetype'),
          url("../woff/Alegreya-MediumItalic.woff") format('woff');
 }
