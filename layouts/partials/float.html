@@ -1,10 +1,10 @@
-{{ if not .Site.Params.hideColorSchemeToggle }}
 <div class="float-container">
-    <a class="sticky" href="#top">
+    <a id="jump-to-top" href="#top">
         <i class="fa fa-chevron-circle-up fa-fw" aria-hidden="true"></i>
     </a>
+    {{ if not .Site.Params.hideColorSchemeToggle }}
     <a id="dark-mode-toggle" class="colorscheme-toggle">
         <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
+    {{ end }}
 </div>
-{{ end }}
