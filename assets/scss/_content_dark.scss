@@ -1,9 +1,11 @@
 @mixin content_dark {
   .content {
     article {
-      > *:not(header) a {
-        &:hover{
-          color: $link-color-dark;
+      > *:not(header){
+        a, details summary {
+          &:hover{
+            color: $link-color-dark;
+          }
         }
       }
       h2, h3, h4 {
