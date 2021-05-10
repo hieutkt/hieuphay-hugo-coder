@@ -14,8 +14,7 @@ body {
   color: $fg-color;
   background-color: $bg-color;
   font-family: $serif-font-family;
-  font-feature-settings: 'liga' on, 'lnum' on;
-  font-variant-numeric: proportional-nums;
+  font-feature-settings: 'liga' on;
   font-size: 1.8em;
   font-weight: 500;
   line-height: 1.4em;
@@ -359,6 +358,7 @@ a:target::before {
 .dropcap {
   font-size: 5.3rem;
   font-weight: 700;
+  font-feature-settings: 'lnum' on;
   float: left;
   line-height: 1;
   margin-right: 0.1em;
