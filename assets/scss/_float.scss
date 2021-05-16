@@ -16,15 +16,27 @@
     border-radius: 0.2rem;
     opacity: 50%;
     transition: all 0.25s ease-in;
-
-    &:hover,
-    &:focus {
-      color: $link-color;
+    &::before {
+      display: block;
+      position: absolute;
+      text-align: right;
+      margin-left: -8.5rem;
+      font-size: 1.6rem;
+    }
+    &:hover, &focus {
       opacity: 100%;
-
-      @media only screen and (max-width: 768px) {
-        color: $alt-fg-color;
-        opacity: 50%;
+      color: $link-color;
+      box-shadow: 1px 1px 3px adjust-color($link-color, $lightness: -10%);
+      &:before {
+        content: "Jump to top";
+      }
+      &#dark-mode-toggle {
+        color: $gruvbox-bright-blue;
+        box-shadow: 1px 1px 3px adjust-color($gruvbox-bright-blue, $lightness: -10%);
+        &:before {
+          content: "Dark mode?";
+          margin-left: -8.5rem;
+        }
       }
     }
 

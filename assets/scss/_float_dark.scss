@@ -4,12 +4,16 @@
       color: $alt-fg-color-dark;
       background-color: $alt-bg-color-dark;
 
-      &:hover,
-      &:focus {
+      &:hover, &focus {
         color: $link-color-dark;
-
-        @media only screen and (max-width: 768px) {
-          color: $alt-fg-color-dark;
+        box-shadow: 1px 1px 3px adjust-color($link-color-dark, $lightness: -20%);
+        &#dark-mode-toggle {
+          color: $gruvbox-bright-yellow-dark;
+          box-shadow: 1px 1px 3px adjust-color($gruvbox-bright-yellow-dark, $lightness: -20%);
+          &:before {
+            content: "Light mode?";
+            margin-left: -8.5rem;
+          }
         }
       }
     }
