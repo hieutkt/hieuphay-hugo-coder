@@ -81,8 +81,11 @@
     border-left: 3px solid $link-color-dark;
   }
 
-  ul.list-tag{
-    div.tags a {
+  ul.list-tag li {
+    > a::before {
+      color: lighten($bg-color-dark, 20%);
+    }
+    > span a {
       color: $link-color-dark;
     }
   }

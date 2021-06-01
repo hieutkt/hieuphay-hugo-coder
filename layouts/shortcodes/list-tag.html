@@ -8,12 +8,14 @@
                 {{ $art.Params.title }}
             {{ else }}
                 {{ $notetags := $art.Params.tags | symdiff (intersect $art.Params.tags (slice $tag)) }}
-                <span class='marginnote'>{{ with $notetags }}{{ partial "taxonomy/tags.html" . }}{{ end }}</span>
-                <a href="{{ $art.Permalink }}">{{ $art.Params.title }}</a>
+                <a href="{{ $art.Permalink }}">
+                    {{ $art.Params.title }}
+                    {{ if in $art.Params.tags "review" }}
+                    <i class="fa fa-book review" aria-hidden="true"></i>
+                    {{ end}}
+                </a>
+                <span>{{ with $notetags }}{{ partial "taxonomy/tags.html" . }}{{ end }}</span>
             {{ end }}
-            {{ if in $art.Params.tags "review" }}
-                <i class="fa fa-book review" aria-hidden="true"></i>
-            {{ end}}
         </li>
         {{ end }}
     {{ end }}
