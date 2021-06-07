@@ -264,16 +264,21 @@ blockquote {
 }
 
 ul.list-tag {
-  margin: 3.2rem 0 3.2rem 0;
   padding: 0 0 0 0;
   max-width: 100%;
+  margin: 3.2rem 0 3.2rem 0;
   li {
     display: flex;
     padding: 0.5rem 0;
     > a {
+      text-decoration-line: none !important;
+      &:hover {
+        text-decoration: underline !important;
+      }
       flex: 2;
       width: 100%;
       margin-right: 2rem;
+      font-weight: 700;
       &::before {
         content: "-";
         display: inline-block;
@@ -292,6 +297,10 @@ ul.list-tag {
       flex: 1;
       a {
         color: $link-color;
+        text-decoration-line: none !important;
+        &:hover {
+          text-decoration: underline !important;
+        }
       }
     }
     @media only screen and (max-width: 768px) {
