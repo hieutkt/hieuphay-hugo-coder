@@ -24,7 +24,8 @@
 }
 
 article {
-    & > p, & > ul, & > figure, & > div.notice {
+    & > p, & > ul, & > figure, & > div.notice,
+    .jp-MarkdownOutput, .jp-OutputArea-output {
         @extend .tufte-margin-reduced;
     }
     & > div {

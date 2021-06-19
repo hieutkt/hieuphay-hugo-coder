@@ -1,0 +1,18 @@
+@mixin notebook_dark {
+    div.jp-InputPrompt {
+        color: $gruvbox-bright-green-dark
+    }
+    div.jp-OutputPrompt {
+        color: $gruvbox-bright-red-dark
+    }
+}
+
+body.colorscheme-dark {
+  @include notebook_dark()
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include notebook_dark()
+  }
+}
