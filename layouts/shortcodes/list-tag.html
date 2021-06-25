@@ -2,19 +2,18 @@
 {{ $tag := .Get "tag" }}
 <ul class='list-tag'>
     {{ range $ind,$art := .Site.Pages.ByDate }}
-        {{ if in $art.Params.tags $tag }}
+        {{ if in $art.Params.series "Reading notes" }}
         <li>
             {{ if eq $art.Permalink $.Page.Permalink}}
                 {{ $art.Params.title }}
             {{ else }}
-                {{ $notetags := $art.Params.tags | symdiff (intersect $art.Params.tags (slice $tag)) }}
                 <a href="{{ $art.Permalink }}">
                     {{ $art.Params.title }}
                     {{ if in $art.Params.tags "review" }}
                     <i class="fa fa-book review" aria-hidden="true"></i>
                     {{ end}}
                 </a>
-                <span>{{ with $notetags }}{{ partial "taxonomy/tags.html" . }}{{ end }}</span>
+                <span>{{ with $art.Params.tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}</span>
             {{ end }}
         </li>
         {{ end }}

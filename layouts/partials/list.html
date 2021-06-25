@@ -14,7 +14,7 @@
     {{ range .Paginator.Pages }}
     <li>
         <span class="date">
-            {{ if in .Page.Params.tags "reading notes" }}
+            {{ if in .Page.Params.series "Reading notes" }}
             {{ print "Notes on:" }}
             {{ else }}
             {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
