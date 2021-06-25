@@ -1,16 +1,21 @@
 @mixin content_dark {
   .content {
-    .post {
-      .tags {
-        .tag {
-          background-color: $alt-bg-color-dark;
-
-          a {
-            color: $fg-color-dark;
+    article {
+      > *:not(header){
+        a, details summary {
+          &:hover{
+            color: $link-color-dark;
           }
-          a:active {
-            color: $fg-color-dark;
-          }
+        }
+      }
+      h2, h3, h4 {
+        &::before {
+          color: lighten($bg-color-dark, 20%);
+        }
+      }
+      > div {
+        img, iframe {
+          box-shadow: 5px 6px 10px adjust-color($emph-bg-color-dark, $lightness: -50%);
         }
       }
     }
