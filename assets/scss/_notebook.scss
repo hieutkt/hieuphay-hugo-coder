@@ -49,7 +49,6 @@ div.inner_cell {
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
   border: 1px solid #cfcfcf;
-  border-radius: 2px;
   background: #f7f7f7;
   line-height: 1.21429em;
 }
@@ -63,7 +62,6 @@ div.jp-InputPrompt {
   font-size: 1.5rem;
   font-family: $code-font-family;
   color: $gruvbox-bright-blue;
-  z-index: -1;
   @media (max-width: 1024px) {
     display: inline;
     position: inherit;
@@ -92,10 +90,27 @@ div.jp-OutputPrompt {
   }
 }
 
-div.jp-OutputArea-executeResult {
+div.jp-Editor div.highlight {
+  border-radius: 10px;
+}
+
+div.jp-OutputArea-executeResult, div.jp-OutputArea-output{
   background-color: $bg-color-notice-info-content;
   font-family: $code-font-family;
   font-size: 1.5rem;
+}
+div.jp-Cell-inputWrapper {
+  padding: 5px 0 5px 0;
+}
+div.jp-MarkdownOutput {
+  background-color: #00000010;
+  border-radius: 10px;
+  padding: 10px;
+  h2, h3, h4 {
+    &::before{
+    display: none;
+    }
+  }
 }
 
 .jp-RenderedText[data-mime-type="application/vnd.jupyter.stderr"] {
