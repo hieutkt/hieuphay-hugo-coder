@@ -1,6 +1,13 @@
 // Dropcaps
-var DropcapLine = document.querySelector("article > div > p:first-child")
-if (DropcapLine != null) {
+var DropcapLine = document.querySelector("article > div > p:first-of-type");
+// no dropcap if the first <p> is after an heading
+var DropcapLinePrevSibling = DropcapLine.previousElementSibling;
+if (DropcapLinePrevSibling != null) {
+  if (DropcapLinePrevSibling.tagName.toLowerCase().startsWith("h")) {
+    DropcapLine = null;
+  }
+}
+if (DropcapLine != null & DropcapLine.innerText.length > 100) {
   var split = DropcapLine.textContent.split(" ");
   var DropcapWord = split[0];
   var DropcapRest = split.slice(1,split.length).join(" ");
