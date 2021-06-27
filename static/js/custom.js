@@ -8,7 +8,7 @@ if (DropcapLinePrevSibling != null) {
   }
 }
 if (DropcapLine != null & DropcapLine.innerText.length > 100) {
-  var split = DropcapLine.textContent.split(" ");
+  var split = DropcapLine.innerHTML.split(" ");
   var DropcapWord = split[0];
   var DropcapRest = split.slice(1,split.length).join(" ");
   var DropcapMatch = /^(["']?.)(.*)$/.exec(DropcapWord);
