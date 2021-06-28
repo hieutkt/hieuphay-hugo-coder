@@ -49,6 +49,10 @@
             }
         }
     }
+    // Different ToC content in different languages
+    :root[lang="vi"] .ox-hugo-toc:hover .heading:after {
+        content: ' Mục lục' !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -71,6 +75,10 @@
             max-height: 500px;
             overflow-y: scroll;
         }
+    }
+    // Different ToC content in different languages
+    :root[lang="vi"] .ox-hugo-toc .heading:after {
+        content: ' Mục lục' !important;
     }
     .toc_sticky {
         position: fixed;
