@@ -29,7 +29,7 @@ article {
         @extend .tufte-margin-reduced;
     }
     & > div {
-        & > p, dl, h2, h3, h4, h5, h6, div.highlight, & > blockquote, hr,
+        & > p, > dl, h2, h3, h4, h5, h6, div.highlight, & > blockquote, hr,
         & > ol, & > ul, & > figure, & > div.notice,
         .epigraph {
             @extend .tufte-margin-reduced;

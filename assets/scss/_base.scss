@@ -350,13 +350,6 @@ dt {
   font-weight: bold;
   padding: 2px 4px;
 }
-dl {
-  background-color: $emph-bg-color;
-  box-shadow: inset 2px 3px 12px adjust-color($emph-bg-color, $lightness: -50%);
-  color: inhehit;
-  padding: 10px;
-  border-radius: 5px;
-}
 
 figure {
   text-align: center;
