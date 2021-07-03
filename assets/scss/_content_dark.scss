@@ -50,6 +50,19 @@
         }
       }
     }
+    .post-meta {
+      .tags {
+        .tag {
+          background-color: $alt-bg-color-dark;
+          a {
+            color: $fg-color-dark;
+            &:hover {
+              color: $link-color-dark;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

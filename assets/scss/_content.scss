@@ -107,6 +107,7 @@
     }
 
     .post-meta {
+      opacity: 0.7;
       i {
         text-align: center;
         width: 1.6rem;
@@ -131,9 +132,9 @@
 
           a {
             color: $fg-color;
-          }
-          a:active {
-            color: $fg-color;
+            &:hover {
+              color: $link-color;
+            }
           }
         }
       }
