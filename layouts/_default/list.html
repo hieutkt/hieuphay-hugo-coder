@@ -4,7 +4,7 @@
     {{- print ": " -}}
   {{- end -}}
 
-  {{- .Title }} · {{ .Site.Title -}}
+  {{- i18n (replace .Title " " "_") | default .Title }} · {{ .Site.Title -}}
 {{ end }}
 {{ define "content" }}
   {{ partial "list.html" . }}

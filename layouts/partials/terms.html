@@ -18,7 +18,7 @@
       {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
         <li>
           <span class="taxonomy-element">
-            <a href="{{ .Permalink }}">{{ .Name }}</a>
+            <a href="{{ .Permalink }}">{{ i18n (replace .Name " " "_") | default .Name }}</a>
             <sup>{{ $count }}</sup>
           </span>
         </li>

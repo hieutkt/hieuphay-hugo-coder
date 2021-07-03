@@ -6,7 +6,11 @@
         {{- print ": " -}}
       {{- end -}}
 
-      {{- i18n (lower .Title) | default .Title | title -}}
+      {{- if eq .Kind "term" -}}
+        {{- i18n (replace .Title " " "_") | default .Title | title -}}
+      {{- else -}}
+        {{- i18n (lower .Title) | default .Title | title -}}
+      {{- end -}}
     </a>
   </h1>
   {{ .Content }}

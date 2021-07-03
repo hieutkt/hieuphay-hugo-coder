@@ -61,3 +61,36 @@ other = "lưu ý"
 
 [error]
 other = "lỗi"
+
+[data_visualization]
+other = "minh họa dữ liệu"
+
+[econometrics]
+other = "kinh tế lượng"
+
+[essay]
+other = "bài luận"
+
+[personal]
+other = "cá nhân"
+
+[programming]
+other = "lập trình"
+
+[spatial]
+other = "không gian"
+
+[statistics]
+other = "thống kê"
+
+[terminology]
+other = "thuật ngữ"
+
+[translating]
+other = "dịch thuật"
+
+[Vietnamese]
+other = "tiếng Việt"
+
+[writing]
+other = "viết"
