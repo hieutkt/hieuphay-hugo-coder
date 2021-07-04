@@ -40,10 +40,11 @@
       padding: 0;
       max-height: 0;
       width: 100%;
-      background-color: $bg-color;
+      background-color: $emph-bg-color;
       border-top: solid 2px $alt-bg-color;
       border-bottom: solid 2px $alt-bg-color;
       transition: opacity 0.25s, max-height 0.15s linear;
+      box-shadow: 2px 3px 12px;
     }
 
     .navigation-item {

@@ -7,7 +7,6 @@
     }
 
     a {
-
       &:hover,
       &:focus {
         color: $link-color-dark;
@@ -18,9 +17,10 @@
     }
     .navigation-list {
       @media only screen and (max-width: 768px) {
-        background-color: $bg-color-dark;
+        background-color: $emph-bg-color-dark;
         border-top: solid 2px $alt-bg-color-dark;
         border-bottom: solid 2px $alt-bg-color-dark;
+        box-shadow: 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
       }
       .navigation-item {
         a, span {
