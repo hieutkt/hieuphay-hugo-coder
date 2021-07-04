@@ -71,6 +71,12 @@ other = "kinh tế lượng"
 [essay]
 other = "bài luận"
 
+[learning]
+other = "học hành"
+
+[math]
+other = "toán học"
+
 [personal]
 other = "cá nhân"
 
