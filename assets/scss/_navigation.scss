@@ -136,8 +136,17 @@
 }
 
 .banner {
+  background-color: #80372d;
+  box-shadow: 2px 3px 12px;
   position: absolute;
-  max-height: 8rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  max-height: 6rem;
   overflow: hidden;
   z-index: -10;
+  img {
+    filter: hue-rotate(-20deg) brightness(50%);
+  }
 }

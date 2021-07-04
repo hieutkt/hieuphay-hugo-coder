@@ -1,9 +1,9 @@
-<div class="banner">
-    <img src="{{ .Site.Params.bannerurl }}" alt=""></img>
-</div>
 
 <nav class="navigation">
-  <section class="container">
+    <div class="banner">
+        <img src="{{ .Site.Params.bannerurl }}" alt=""></img>
+    </div>
+    <section class="container">
     <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
       {{ .Site.Title }}
     </a>

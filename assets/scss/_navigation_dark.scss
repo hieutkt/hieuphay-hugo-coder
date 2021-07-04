@@ -14,7 +14,7 @@
       }
     }
     .navigation-title {
-      color: $fg-color;
+      color: $fg-color-dark;
     }
     .navigation-list {
       @media only screen and (max-width: 768px) {
@@ -24,7 +24,7 @@
       }
       .navigation-item {
         a, span {
-          color: $fg-color;
+          color: $fg-color-dark;
           @media only screen and (max-width: 768px) {
             color: $fg-color-dark;
           }
@@ -47,16 +47,20 @@
     }
 
     i {
-      color: $fg-color;
+      color: $fg-color-dark;
       &:hover,
       &:focus {
-        color: $link-color;
+        color: $link-color-dark;
       }
     }
   }
 
   .banner {
-    filter: invert(100%) sepia(50%);
+    background-color: #004f50;
+    box-shadow: 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
+    img {
+      filter: hue-rotate(160deg) brightness(50%);
+    }
   }
 }
 
