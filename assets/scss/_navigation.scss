@@ -1,22 +1,13 @@
 .navigation {
   height: 6rem;
   width: 100%;
-  a,
-  span {
+  a, span {
     display: inline;
     font-size: 1.7rem;
     font-family: $sc-font-family;
     font-weight: 700;
     line-height: 6rem;
     color: $fg-color;
-  }
-
-  a {
-
-    &:hover,
-    &:focus {
-      color: $link-color;
-    }
   }
 
   .navigation-title {
@@ -57,16 +48,13 @@
       @media only screen and (max-width: 768px) {
         float: none !important;
         text-align: center;
-
-        a,
-        span {
+        a, span {
           line-height: 5rem;
           color: $fg-color;
         }
       }
 
-      a,
-      span {
+      a, span {
         margin-left: 1rem;
         margin-right: 1rem;
       }
@@ -105,7 +93,7 @@
 
     @media only screen and (max-width: 768px) {
       &:checked+label>i {
-        color: $alt-bg-color-dark;
+        color: $muted-bg-color;
       }
 
       &:checked+label+ul {
