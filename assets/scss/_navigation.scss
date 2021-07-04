@@ -22,6 +22,7 @@
   .navigation-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    color: $fg-color-dark;
   }
 
   .navigation-list {
@@ -29,7 +30,6 @@
     list-style: none;
     margin-bottom: 0;
     margin-top: 0;
-
     @media only screen and (max-width: 768px) {
       position: absolute;
       top: 6rem;
@@ -50,7 +50,9 @@
       float: left;
       margin: 0;
       position: relative;
-
+      a, span {
+        color: $fg-color-dark;
+      }
       @media only screen and (max-width: 768px) {
         float: none !important;
         text-align: center;
@@ -58,6 +60,7 @@
         a,
         span {
           line-height: 5rem;
+          color: $fg-color;
         }
       }
 
@@ -101,7 +104,7 @@
 
     @media only screen and (max-width: 768px) {
       &:checked+label>i {
-        color: $alt-bg-color;
+        color: $alt-bg-color-dark;
       }
 
       &:checked+label+ul {
@@ -114,30 +117,27 @@
 
   .menu-button {
     display: none;
-
     @media only screen and (max-width: 768px) {
       display: block;
       margin: 1.8rem 0;
       font-size: 2.4rem;
       font-weight: 500;
     }
-
-    i {
-
-      &:hover,
-      &:focus {
-        color: $alt-fg-color;
-      }
-    }
   }
 
   i {
-    color: $fg-color;
+    color: $fg-color-dark;
     cursor: pointer;
-
     &:hover,
     &:focus {
-      color: $link-color;
+      color: $alt-fg-color-dark;
     }
   }
+}
+
+.banner {
+  position: absolute;
+  max-height: 8rem;
+  overflow: hidden;
+  z-index: -10;
 }

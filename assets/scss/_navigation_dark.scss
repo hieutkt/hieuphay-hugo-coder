@@ -13,12 +13,22 @@
         color: $link-color-dark;
       }
     }
-
+    .navigation-title {
+      color: $fg-color;
+    }
     .navigation-list {
       @media only screen and (max-width: 768px) {
         background-color: $bg-color-dark;
         border-top: solid 2px $alt-bg-color-dark;
         border-bottom: solid 2px $alt-bg-color-dark;
+      }
+      .navigation-item {
+        a, span {
+          color: $fg-color;
+          @media only screen and (max-width: 768px) {
+            color: $fg-color-dark;
+          }
+        }
       }
 
       .menu-separator {
@@ -37,23 +47,16 @@
     }
 
     i {
-      color: $fg-color-dark;
-
+      color: $fg-color;
       &:hover,
       &:focus {
-        color: $link-color-dark;
+        color: $link-color;
       }
     }
+  }
 
-    .menu-button {
-      i {
-
-        &:hover,
-        &:focus {
-          color: $alt-fg-color-dark;
-        }
-      }
-    }
+  .banner {
+    filter: invert(100%) sepia(50%);
   }
 }
 
