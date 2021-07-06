@@ -11,7 +11,9 @@
           color: $gruvbox-bright-yellow-dark;
           box-shadow: 1px 1px 3px adjust-color($gruvbox-bright-yellow-dark, $lightness: -20%);
           &:before {
-            content: "Light mode?";
+            @media (min-width: 768px) {
+              content: "Light mode?";
+            }
             margin-left: -8.5rem;
           }
         }

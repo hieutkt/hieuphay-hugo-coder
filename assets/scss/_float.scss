@@ -28,13 +28,17 @@
       color: $link-color;
       box-shadow: 1px 1px 3px adjust-color($link-color, $lightness: -10%);
       &:before {
-        content: "Jump to top";
+        @media (min-width: 768px) {
+          content: "Jump to top";
+        }
       }
       &#dark-mode-toggle {
         color: $gruvbox-bright-blue;
         box-shadow: 1px 1px 3px adjust-color($gruvbox-bright-blue, $lightness: -10%);
         &:before {
-          content: "Dark mode?";
+          @media (min-width: 768px) {
+            content: "Dark mode?";
+          }
           margin-left: -8.5rem;
         }
       }
