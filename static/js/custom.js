@@ -7,16 +7,18 @@ if (DropcapLinePrevHeadingSibling != null) {
     DropcapLinePrevHeadingSibling = null;
   }
 }
-if (DropcapLine != null & DropcapLinePrevHeadingSibling != null & DropcapLine.innerText.length > 100) {
-  var split = DropcapLine.innerHTML.split(" ");
-  var DropcapWord = split[0];
-  var DropcapRest = split.slice(1,split.length).join(" ");
-  var DropcapMatch = /^(["']?.)(.*)$/.exec(DropcapWord);
-  var DropcapChar = DropcapMatch[1];
-  var DropcapCharRest = DropcapMatch[2];
-  DropcapLine.innerHTML = "<span role='text'><span aria-hidden='true'><span class='dropcap'>"
-    +DropcapChar+"</span>"+DropcapCharRest+"</span><span class='visually-hidden'>" + DropcapWord
-    +"</span></span> " + DropcapRest;
+if (DropcapLine != null & DropcapLinePrevHeadingSibling != null ) {
+  if (DropcapLine.innerText.length > 100) {
+    var split = DropcapLine.innerHTML.split(" ");
+    var DropcapWord = split[0];
+    var DropcapRest = split.slice(1,split.length).join(" ");
+    var DropcapMatch = /^(["']?.)(.*)$/.exec(DropcapWord);
+    var DropcapChar = DropcapMatch[1];
+    var DropcapCharRest = DropcapMatch[2];
+    DropcapLine.innerHTML = "<span role='text'><span aria-hidden='true'><span class='dropcap'>"
+      +DropcapChar+"</span>"+DropcapCharRest+"</span><span class='visually-hidden'>" + DropcapWord
+      +"</span></span> " + DropcapRest;
+  }
 }
 
 // Auto resize iframes
