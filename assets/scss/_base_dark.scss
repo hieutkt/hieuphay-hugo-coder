@@ -39,6 +39,20 @@
     }
   }
 
+  #bibliography ~ p{
+    &::before {
+      color: $gruvbox-light4-dark;
+    }
+    a:target::before{
+      color: $main-fg-color-dark;
+      background-color: $gruvbox-bright-aqua;
+    }
+  }
+  div.csl-entry a:target::before {
+    color: $main-fg-color-dark;
+    background-color: $gruvbox-bright-aqua;
+  }
+
   hr {
     border-top: 1px dashed $gruvbox-gray-dark;
   }
@@ -96,7 +110,6 @@
   table th {
     border: 2px solid $alt-fg-color-dark;
   }
-
   :target {
     animation: blinker-dark 2s ease-out;
   }
@@ -105,10 +118,7 @@
       background-color: $gruvbox-bright-aqua;
     }
   }
-  a:target::before{
-    color: $main-fg-color-dark;
-    background-color: $gruvbox-bright-aqua;
-  }
+
   .dropcap {
     color: $link-color-dark;
     text-shadow: 5px 3px 3px adjust-color($emph-bg-color-dark, $lightness: -50%);

@@ -30,7 +30,7 @@ article {
     }
     & > div {
         & > p, > dl, h2, h3, h4, h5, h6, div.highlight, & > blockquote, hr,
-        & > ol, & > ul, & > figure, & > div.notice,
+        & > ol, & > ul, & > figure, & > div.notice, div.csl-entry,
         .epigraph {
             @extend .tufte-margin-reduced;
         }
