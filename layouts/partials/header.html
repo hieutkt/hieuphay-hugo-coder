@@ -32,7 +32,10 @@
                 {{ $node.Scratch.Set "separator" false }}
               {{ end }}
               <li class="navigation-item">
-                <a href="{{ .Permalink }}">{{ .Language.LanguageName | emojify }}</a>
+                <a href="{{ .Permalink }}">
+                  <i class="fa fa-language" style="font-size: 120%"></i>
+                    {{ .Language.LanguageName | emojify }}
+                </a>
               </li>
             {{ end }}
           {{ end }}

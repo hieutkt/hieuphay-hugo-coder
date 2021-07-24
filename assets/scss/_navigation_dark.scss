@@ -14,7 +14,7 @@
         box-shadow: 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%);
       }
       .navigation-item {
-        a, span {
+        a, i, span {
           color: $fg-color-dark;
           @media only screen and (max-width: 768px) {
             color: $fg-color-dark;
