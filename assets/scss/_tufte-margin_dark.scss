@@ -15,6 +15,11 @@
         background-color: $main-bg-color-dark !important;
         border-left: none !important;
       }
+    label.sidenote-number {
+        &:hover ~ .sidenote {
+          background-color: #ffffff10;
+        }
+      }
 }
 
 

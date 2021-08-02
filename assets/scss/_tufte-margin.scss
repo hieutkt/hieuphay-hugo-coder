@@ -120,6 +120,9 @@ input.margin-toggle {
 
 label.sidenote-number {
     display: inline;
+    &:hover ~ .sidenote {
+        background-color: #00000010;
+    }
 }
 
 label.margin-toggle:not(.sidenote-number) {
