@@ -30,7 +30,6 @@
       a, details summary {
         color: inherit;
         text-decoration-line: underline;
-        text-decoration-style: dotted;
         &:hover {
           text-decoration-style: solid;
           color: $link-color;
@@ -66,7 +65,7 @@
     h2, h3, h4 {
       &::before {
         font-family: $symbol-font-family;
-        font-weight: 500;
+        font-weight: 400;
         opacity: 50%;
         color: $gruvbox-light4;
         @media (min-width: 1024px) {
