@@ -65,7 +65,7 @@
     h2, h3, h4 {
       &::before {
         font-family: $symbol-font-family;
-        font-weight: 400;
+        font-weight: 700;
         opacity: 50%;
         color: $gruvbox-light4;
         @media (min-width: 1024px) {
