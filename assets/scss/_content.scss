@@ -29,9 +29,10 @@
     > :not(header){
       a, details summary {
         color: inherit;
-        text-decoration-line: underline;
+        text-decoration-line: none;
+        border-bottom: 1px dotted;
         &:hover {
-          text-decoration-style: solid;
+          border-bottom: 1px solid;
           color: $link-color;
         }
       }

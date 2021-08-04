@@ -60,7 +60,7 @@ h6 {
   .heading-link {
     color: $link-color;
     font-weight: inherit;
-    text-decoration: none;
+    border-bottom: none !important;
     font-size: 80%;
     visibility: hidden;
     @media only screen and (max-width: 768px) {
@@ -106,7 +106,6 @@ h2, #bibliography {
     text-align: right;
     margin-left: -1rem;
     margin-top: 0.3rem;
-    font-weight: 500;
     font-family: $symbol-font-family;
     color: $gruvbox-light4;
     z-index: -1;
@@ -121,7 +120,6 @@ h2, #bibliography {
     text-align: right;
     margin-top: 0.35rem;
     margin-left: -2rem;
-    font-weight: 500;
   }
 }
 
@@ -299,6 +297,7 @@ ul.list-tag {
     display: flex;
     padding: 0.5rem 0;
     > a {
+      border-bottom: none !important;
       text-decoration-line: none !important;
       &:hover {
         text-decoration: underline !important;
@@ -314,7 +313,6 @@ ul.list-tag {
         text-align: right;
         margin-left: -1rem;
         margin-top: 0.3rem;
-        font-weight: 500;
         font-family: $symbol-font-family;
         color: $gruvbox-light4;
         z-index: -1;
@@ -325,10 +323,6 @@ ul.list-tag {
       flex: 1;
       a {
         color: $link-color;
-        text-decoration-line: none !important;
-        &:hover {
-          text-decoration: underline !important;
-        }
       }
     }
     @media only screen and (max-width: 768px) {

@@ -16,22 +16,8 @@
   h5,
   h6 {
     color: $main-fg-color-dark;
-
-    &:hover .heading-link {
-      visibility: visible;
-    }
-
-    .heading-link {
-      font-weight: inherit;
-      text-decoration: none;
-      font-size: 80%;
-      visibility: hidden;
-    }
-
     .title-link {
       color: inherit;
-      font-weight: inherit;
-      text-decoration: none;
     }
   }
 
