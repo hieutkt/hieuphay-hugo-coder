@@ -103,7 +103,7 @@ div.jp-Cell-inputWrapper {
   padding: 5px 0 5px 0;
 }
 div.jp-MarkdownOutput {
-  background-color: #00000010;
+  background-color: #00000009;
   border-radius: 10px;
   padding: 10px;
   h2, h3, h4 {
@@ -625,5 +625,14 @@ div.output_javascript:empty {
 }
 
 a.anchor-link {
+  font-weight: inherit;
+  text-decoration: none !important;
+  visibility: hidden;
   padding-left: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:hover .anchor-link {
+    visibility: visible;
+  }
 }
