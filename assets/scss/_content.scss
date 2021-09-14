@@ -6,11 +6,21 @@
 
   article {
     details {
+      background-color: #00000010;
+      border-left: 3px solid $link-color;
+      padding: 0.3rem 0.6rem;
       summary {
+        padding: none;
         cursor: pointer;
+        padding: 5px;
+        &:hover {
+          color: $link-color;
+        }
       }
     }
-
+    details[open] > summary:before {
+      transform: rotate(90deg);
+    }
     header {
       margin-top: 6.4rem;
       margin-bottom: 3.2rem;
@@ -27,7 +37,7 @@
       }
     }
     > :not(header){
-      a, details summary {
+      a {
         color: inherit;
         text-decoration-line: none;
         border-bottom: 1px dotted;
@@ -101,40 +111,37 @@
     }
   }
 
-  .post {
-    .post-title {
-      margin-bottom: 0.75em;
+  .post-title {
+    margin-bottom: 0.75em;
+  }
+
+  .post-meta {
+    opacity: 0.7;
+    i {
+      text-align: center;
+      width: 1.6rem;
+      margin-left: 0;
+      margin-right: 0.5rem;
     }
 
-    .post-meta {
-      opacity: 0.7;
-      i {
-        text-align: center;
-        width: 1.6rem;
+    .date {
+      .posted-on {
         margin-left: 0;
-        margin-right: 0.5rem;
+        margin-right: 1.5rem;
       }
+    }
 
-      .date {
-        .posted-on {
-          margin-left: 0;
-          margin-right: 1.5rem;
-        }
-      }
-
-      .tags {
-        .tag {
-          display: inline-block;
-          padding: 0.3rem 0.6rem;
-          background-color: $alt-bg-color;
-          border-radius: 0.6rem;
-          line-height: 1.4em;
-
-          a {
-            color: $fg-color;
-            &:hover {
-              color: $link-color;
-            }
+    .tags {
+      .tag {
+        display: inline-block;
+        padding: 0.3rem 0.6rem;
+        background-color: $alt-bg-color;
+        border-radius: 0.6rem;
+        line-height: 1.4em;
+        a {
+          color: $fg-color;
+          &:hover {
+            color: $link-color;
           }
         }
       }

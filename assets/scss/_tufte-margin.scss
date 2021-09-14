@@ -24,13 +24,13 @@
 }
 
 article {
-    & > p, & > ul, & > figure, & > div.notice,
-    .jp-MarkdownOutput, .jp-OutputArea-output {
+    > p, > ul, > figure, > div.notice,
+    .jp-MarkdownOutput {
         @extend .tufte-margin-reduced;
     }
-    & > div {
-        & > p, > dl, > h2, > h3, > h4, > h5, > h6, div.highlight, & > blockquote, hr,
-        & > ol, & > ul, & > figure, & > div.notice, div.csl-entry,
+    > div {
+        > p, > dl, > h2, > h3, > h4, > h5, > h6, > div.highlight, > blockquote, hr, > details,
+        > ol, > ul, > figure, > div.notice, div.csl-entry,
         .epigraph {
             @extend .tufte-margin-reduced;
         }

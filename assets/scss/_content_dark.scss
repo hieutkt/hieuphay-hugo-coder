@@ -1,8 +1,18 @@
 @mixin content_dark {
   .content {
     article {
+      details {
+        background-color: #ffffff10;
+        border-left: 3px solid $link-color-dark;
+        summary {
+          &:hover {
+            color: $link-color-dark;
+          }
+        }
+      }
+
       > *:not(header){
-        a, details summary {
+        a {
           &:hover{
             color: $link-color-dark;
           }
@@ -40,7 +50,6 @@
           li {
             a {
               color: $fg-color-dark;
-
               &:hover,
               &:focus {
                 color: $link-color-dark;
