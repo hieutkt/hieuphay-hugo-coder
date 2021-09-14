@@ -8,9 +8,9 @@
     display: inline;
 }
 
-a[href$="#"] {
+a[href$="#"], a:not([href^="http"])[href$="md"] {
     pointer-events: none;
-    text-decoration-line: none !important;
+    border-bottom: none;
 }
 
 // article > :not(header) {
