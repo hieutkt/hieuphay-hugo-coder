@@ -9,9 +9,6 @@
             {{ else }}
                 <a href="{{ $art.Permalink }}">
                     {{ $art.Params.title }}
-                    {{ if in $art.Params.tags "review" }}
-                    <i class="fa fa-book review" aria-hidden="true"></i>
-                    {{ end}}
                 </a>
                 <span>{{ with $art.Params.tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}</span>
             {{ end }}
