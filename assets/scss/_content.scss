@@ -40,7 +40,7 @@
       a {
         color: inherit;
         text-decoration-line: none;
-        border-bottom: 1px dotted;
+        border-bottom: 1px dashed;
         &:hover {
           border-bottom: 1px solid;
           color: $link-color;
@@ -49,7 +49,6 @@
     }
     > div {
       img, iframe {
-        max-width: 100%;
         box-shadow: 5px 6px 10px $gruvbox-dark3;
       }
     }

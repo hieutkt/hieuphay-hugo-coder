@@ -1,6 +1,6 @@
 <!-- Obtain all posts with tag -->
 {{ $tag := .Get "tag" }}
-<ul class='list-tag'>
+<ul class="list-tag fullwidth">
     {{ range $ind,$art := .Site.Pages.ByDate }}
         {{ if in $art.Params.series "Reading notes" }}
         <li>
