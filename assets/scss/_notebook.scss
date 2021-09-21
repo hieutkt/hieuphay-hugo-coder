@@ -61,7 +61,7 @@ div.jp-InputPrompt {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   font-family: $code-font-family;
-  color: $gruvbox-bright-blue;
+  color: #22863A;
   @media (max-width: 1024px) {
     display: inline;
     position: inherit;
@@ -77,7 +77,7 @@ div.jp-OutputPrompt {
   margin-left: -6.5rem;
   font-size: 1.5rem;
   font-family: $code-font-family;
-  color: $gruvbox-bright-orange;
+  color: $gruvbox-bright-red;
   z-index: -1;
   @media (max-width: 1024px) {
     display: inline;
@@ -94,10 +94,13 @@ div.jp-Editor div.highlight {
   border-radius: 10px;
 }
 
-div.jp-OutputArea-executeResult, div.jp-OutputArea-output{
-  background-color: $bg-color-notice-info-content;
+div.jp-OutputArea-executeResult, div.jp-OutputArea-output {
+  background-color: #e6f4ff0f;
+  box-shadow: 2px 3px 12px adjust-color($emph-bg-color-dark, $lightness: -50%) inset;
   font-family: $code-font-family;
   font-size: 1.5rem;
+  overflow-x: scroll;
+  padding: 1rem;
 }
 div.jp-Cell-inputWrapper {
   padding: 5px 0 5px 0;
@@ -115,6 +118,10 @@ div.jp-MarkdownOutput {
 
 .jp-RenderedText[data-mime-type="application/vnd.jupyter.stderr"] {
   background-color: $bg-color-notice-error-content;
+}
+
+.jp-RenderedSVG[data-mime-type="application/vnd.jupyter.stderr"] {
+  padding: 0.3rem 0.6rem;
 }
 
 /* This is needed so that empty prompt areas can collapse to zero height when there

@@ -1,10 +1,15 @@
 @mixin notebook_dark {
     div.jp-InputPrompt {
-        color: $gruvbox-bright-green-dark
+        color: lighten(#22863A, 10%);
     }
     div.jp-OutputPrompt {
-        color: $gruvbox-bright-red-dark
+        color: lighten($gruvbox-bright-red-dark, 10%);
     }
+    .jp-RenderedSVG {
+        svg {
+          filter: invert(160%) hue-rotate(180deg) sepia(1%);
+        }
+      }
 }
 
 body.colorscheme-dark {
