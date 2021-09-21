@@ -284,7 +284,7 @@ kbd {
 
 blockquote {
   margin: 0;
-  background-color: #00000010;
+  background-color: $overlay-color;
   border-left: 3px solid $link-color;
   padding: 10px;
 }

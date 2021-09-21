@@ -2,7 +2,7 @@
   .content {
     article {
       details {
-        background-color: #ffffff10;
+        background-color: $overlay-color-dark;
         border-left: 3px solid $link-color-dark;
         summary {
           &:hover {
