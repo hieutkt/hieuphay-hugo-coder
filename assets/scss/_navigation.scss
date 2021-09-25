@@ -135,6 +135,7 @@
   overflow: hidden;
   z-index: -10;
   img {
+    width: 100%;
     filter: hue-rotate(-20deg) brightness(50%);
   }
 }
