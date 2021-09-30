@@ -14,9 +14,9 @@ body {
   color: $fg-color;
   background-color: $bg-color;
   font-family: $serif-font-family;
-  font-feature-settings: 'liga' on;
+  font-weight: $regular-font-weight;
+  font-feature-settings: 'liga' on 'wght' on;
   font-size: 1.8em;
-  font-weight: 400;
   line-height: 1.4em;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
@@ -185,7 +185,7 @@ hr {
 }
 
 b, strong {
-  font-weight: 700;
+  font-weight: $bold-font-weight;
 }
 
 .underline {
@@ -305,7 +305,6 @@ ul.list-tag {
       flex: 2;
       width: 100%;
       margin-right: 2rem;
-      font-weight: 700;
       &::before {
         content: "-";
         display: inline-block;

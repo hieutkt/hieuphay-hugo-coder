@@ -6,22 +6,16 @@
 
 /* ALEGREYA */
 @font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 400;
-    src: url("../woff2/Alegreya/Alegreya-Regular.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-Regular.ttf") format('truetype'),
-         url("../woff/Alegreya-Regular.woff") format('woff');
+    font-family: 'Alegreya Variations';
+    src: url("../ttf/Alegreya/Alegreya-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 400 900;
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 400;
+    font-family: 'Alegreya Variations';
+    src: url("../ttf/Alegreya/Alegreya-Italic-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 400 900;
     font-style: italic;
-    src: url("../woff2/Alegreya/Alegreya-Italic.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-Italic.ttf") format('truetype'),
-         url("../woff/Alegreya-Italic.woff") format('woff');
 }
 
 @font-face {
@@ -43,25 +37,6 @@
          url("../woff/AlegreyaSC-Italic.woff") format('woff');
 }
 
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 500;
-    font-style: normal;
-    src: url("../woff2/Alegreya/Alegreya-Medium.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-Medium.ttf") format('truetype'),
-         url("../woff/Alegreya-Medium.woff") format('woff');
-}
-
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 500;
-    font-style: italic;
-    src: url("../woff2/Alegreya/Alegreya-MediumItalic.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-MediumItalic.ttf") format('truetype'),
-         url("../woff/Alegreya-MediumItalic.woff") format('woff');
-}
 
 @font-face {
     font-family: 'Alegreya SC Web';
@@ -84,45 +59,6 @@
 }
 
 @font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 600;
-    font-style: normal;
-    src: /* url("../woff2/Alegreya/Alegreya-SemiBold.woff2") format('woff2'), */
-         url("../ttf/Alegreya/Alegreya-SemiBold.ttf") format('truetype'),
-         url("../woff/Alegreya-Medium.woff") format('woff');
-}
-
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 500;
-    font-style: italic;
-    src: /* url("../woff2/Alegreya/Alegreya-SemiBoldItalic.woff2") format('woff2'), */
-         url("../ttf/Alegreya/Alegreya-SemiBoldItalic.ttf") format('truetype'),
-         url("../woff/Alegreya-MediumItalic.woff") format('woff');
-}
-
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 700;
-    src: url("../woff2/Alegreya/Alegreya-Bold.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-Bold.ttf") format('truetype'),
-         url("../woff/Alegreya-Bold.woff") format('woff');
-}
-
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 700;
-    font-style: italic;
-    src: url("../woff2/Alegreya/Alegreya-BoldItalic.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-BoldItalic.ttf") format('truetype'),
-         url("../woff/Alegreya-BoldItalic.woff") format('woff');
-}
-
-@font-face {
     font-family: 'Alegreya SC Web';
     font-display: swap;
     font-weight: 700;
@@ -141,25 +77,6 @@
          url("../woff/AlegreyaSC-BoldItalic.woff") format('woff');
 }
 
-@font-face {
-    font-family: 'Alegreya Web';
-    font-weight: 800;
-    font-display: swap;
-    font-style: normal;
-    src: url("../woff2/Alegreya/Alegreya-ExtraBold.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-ExtraBold.ttf") format('truetype'),
-         url("../woff/Alegreya-ExtraBold.woff") format('woff');
-}
-
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 800;
-    font-style: italic;
-    src: url("../woff2/Alegreya/Alegreya-ExtraBoldItalic.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-ExtraBoldItalic.ttf") format('truetype'),
-         url("../woff/Alegreya-ExtraBoldItalic.woff") format('woff');
-}
 
 @font-face {
     font-family: 'Alegreya SC Web';
@@ -180,24 +97,6 @@
          url("../woff/AlegreyaSC-ExtraBoldItalic.woff") format('woff');
 }
 
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 900;
-    src: url("../woff2/Alegreya/Alegreya-Black.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-Black.ttf") format('truetype'),
-         url("../woff/Alegreya-Black.woff") format('woff');
-}
-
-@font-face {
-    font-family: 'Alegreya Web';
-    font-display: swap;
-    font-weight: 900;
-    font-style: italic;
-    src: url("../woff2/Alegreya/Alegreya-BlackItalic.woff2") format('woff2'),
-         url("../ttf/Alegreya/Alegreya-BlackItalic.ttf") format('truetype'),
-         url("../woff/Alegreya-BlackItalic.woff") format('woff');
-}
 
 @font-face {
     font-family: 'Alegreya SC Web';
