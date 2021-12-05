@@ -62,7 +62,7 @@ other = "lưu ý"
 [error]
 other = "lỗi"
 
-[data_visualization]
+[visualization]
 other = "minh họa dữ liệu"
 
 [econometrics]
