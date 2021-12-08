@@ -13,6 +13,9 @@ other = "tags"
 [series]
 other = "series"
 
+[in_series]
+other = "in series"
+
 [author]
 other = "author"
 

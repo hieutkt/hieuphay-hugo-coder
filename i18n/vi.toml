@@ -13,6 +13,9 @@ other = "các nhãn"
 [series]
 other = "chuỗi bài"
 
+[in_series]
+other = "trong chuỗi bài"
+
 [author]
 other = "tác giả"
 

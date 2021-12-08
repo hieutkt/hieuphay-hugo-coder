@@ -1,0 +1,12 @@
+<div class="tags">
+  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+  {{- range $index, $el := . -}}
+    {{- if gt $index 0 }}
+      <span class="separator">•</span>
+    {{- end }}
+    {{ i18n "in_series" | humanize }}:
+    <span class="tag">
+      <a href="{{ ( printf "series/%s/" ( . | urlize ) ) | relLangURL }}">{{ i18n (replace . " " "_") | default . }}</a>
+    </span>
+  {{- end -}}
+</div>
