@@ -1,24 +1,22 @@
-@mixin taxonomies_dark {
-  .taxonomy {
-    .taxonomy-element {
-      background-color: $alt-bg-color-dark;
+@mixin taxonomy_dark {
+  .taxonomy-element {
+    background-color: $alt-bg-color-dark;
 
-      a {
-        color: $fg-color-dark;
-      }
-      a:active {
-        color: $fg-color-dark;
-      }
+    a {
+      color: $fg-color-dark;
+    }
+    a:active {
+      color: $fg-color-dark;
     }
   }
 }
 
 body.colorscheme-dark {
-  @include taxonomies_dark()
+  @include taxonomy_dark();
 }
 
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
-    @include taxonomies_dark()
+    @include taxonomy_dark();
   }
 }

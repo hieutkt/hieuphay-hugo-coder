@@ -22,8 +22,8 @@
     margin-bottom: 0;
     margin-top: 0;
     @media only screen and (max-width: 768px) {
-      position: absolute;
-      top: 6rem;
+      position: relative;
+      top: 2rem;
       right: 0;
       z-index: 5;
       visibility: hidden;
@@ -107,8 +107,8 @@
   .menu-button {
     display: none;
     @media only screen and (max-width: 768px) {
+      position: relative;
       display: block;
-      margin: 1.8rem 0;
       font-size: 2.4rem;
     }
   }
