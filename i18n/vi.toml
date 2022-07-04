@@ -65,8 +65,14 @@ other = "lưu ý"
 [error]
 other = "lỗi"
 
+[admission]
+other = "tuyển sinh"
+
 [visualization]
 other = "minh họa dữ liệu"
+
+[economics]
+other = "kinh tế học"
 
 [econometrics]
 other = "kinh tế lượng"
