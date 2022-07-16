@@ -4,7 +4,7 @@
       color: $alt-fg-color-dark;
       background-color: $alt-bg-color-dark;
 
-      &:hover, &focus {
+      &:hover, &:focus {
         color: $link-color-dark;
         box-shadow: 1px 1px 3px adjust-color($link-color-dark, $lightness: -20%);
         &#dark-mode-toggle {
@@ -22,6 +22,23 @@
   }
 }
 
+@mixin float_vi_dark {
+  .float-container {
+    a {
+      &:hover, &:focus {
+        &#dark-mode-toggle {
+          &:before {
+            @media (min-width: 768px) {
+              content: "Bật đèn lên?";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 body.colorscheme-dark {
   @include float_dark();
 }
@@ -29,5 +46,16 @@ body.colorscheme-dark {
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
     @include float_dark();
+  }
+}
+
+html[lang="vi"] {
+  body.colorscheme-dark {
+    @include float_vi_dark();
+  }
+  body.colorscheme-auto {
+    @media (prefers-color-scheme: dark) {
+      @include float_vi_dark();
+    }
   }
 }

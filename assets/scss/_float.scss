@@ -23,7 +23,7 @@
       margin-left: -8.5rem;
       font-size: 1.6rem;
     }
-    &:hover, &focus {
+    &:hover, &:focus {
       opacity: 100%;
       color: $link-color;
       box-shadow: 1px 1px 3px adjust-color($link-color, $lightness: -10%);
@@ -51,4 +51,31 @@
       transform: translate(-50%, -50%);
     }
   }
+}
+
+@mixin float_vi {
+  .float-container {
+    a {
+      &:hover, &:focus {
+        &:before {
+          margin-left: -9rem;
+          @media (min-width: 768px) {
+            content: "Nhảy lên đầu";
+          }
+        }
+        &#dark-mode-toggle {
+          &:before {
+            margin-left: -10.3rem;
+            @media (min-width: 768px) {
+              content: "Tắt đèn đi nhé?";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+html[lang="vi"] {
+  @include float_vi();
 }
