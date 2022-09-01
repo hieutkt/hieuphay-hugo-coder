@@ -176,12 +176,22 @@ h6 {
 }
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
+  border: none;
   border-top: 1px dashed $gruvbox-gray;
-  margin: 1em 0;
-  padding: 0;
+  color: $gruvbox-gray;
+  overflow: visible;
+  text-align: center;
+  margin: 3rem 0;
+  height: 5px;
+  &:after {
+    background: $bg-color;
+    font-family: $symbol-font-family;
+    font-size: 3rem;
+    content: '🙦';
+    padding: 0 20px;
+    position: relative;
+    top: -10px;
+  }
 }
 
 b, strong {

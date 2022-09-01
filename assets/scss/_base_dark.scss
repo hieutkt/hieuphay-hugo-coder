@@ -37,6 +37,9 @@
 
   hr {
     border-top: 1px dashed $gruvbox-gray-dark;
+    &:after {
+      background: $bg-color-dark;
+    }
   }
 
   code {
