@@ -50,8 +50,17 @@
         box-shadow: 5px 6px 10px $gruvbox-dark3;
       }
     }
+
     .katex {
       font-size: inherit;
+    }
+    .katex-display > .katex {
+      font-size: inherit;
+      display: inline-block;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow-x: scroll;
+      text-align: initial;
     }
 
     h2::before {
